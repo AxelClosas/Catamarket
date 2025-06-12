@@ -443,8 +443,7 @@ header {
     transition: transform 250ms ease-in-out;
     bottom: 0;
     z-index: 100;
-
-    background: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+    background-color: var(--color-primary);
 }
 
 .sidebarMenuInner{
@@ -464,8 +463,7 @@ header {
     background-size: 0% 100%;
     background-repeat: no-repeat;
     background-position: left;
-
-    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    background-color: var(--color-primary);
     color: var(--color-primary-contrast);
 }
 
@@ -844,7 +842,7 @@ footer {
 .footer-logo p {
     max-width: 250px;
     font-size: 14px;
-    color: var(--color-text-secondary);
+    color: var(--color-primary-contrast);
 }
 
 .footer-links h4,
@@ -853,7 +851,7 @@ footer {
     font-size: 16px;
     border-bottom: 1px solid #444;
     padding-bottom: 5px;
-    color: var(--color-text-secondary);
+    color: var(--color-primary-contrast);
 }
 
 .footer-links ul {
@@ -868,7 +866,7 @@ footer {
 .footer-links ul li a {
     text-decoration: none;
     transition: color 0.2s;
-    color: var(--color-text-secondary);
+    color: var(--color-primary-contrast);
 }
 
 .footer-links ul li a:hover {
@@ -878,12 +876,12 @@ footer {
 .footer-contact p {
     font-size: 14px;
     margin: 5px 0;
-    color: var(--color-text-secondary);
+    color: var(--color-primary-contrast);
 }
 
 .footer-contact i {
     margin-right: 8px;
-    color: var(--color-text-secondary);
+    color: var(--color-primary-contrast);
 }
 
 .social-icons a {
@@ -901,7 +899,7 @@ footer {
     text-align: center;
     margin-top: 30px;
     font-size: 14px;
-    color: var(--color-text-secondary);
+    color: var(--color-primary-contrast);
 }
 
 @media (max-width: 768px) {
@@ -1043,12 +1041,12 @@ footer {
 
 .beneficio-marketplace h3 {
   font-size: 1.4rem;
-  color: #2c3e50;
+  color: var(--color-text-primary);
   margin-bottom: 1rem;
 }
 
 .beneficio-marketplace p {
-  color: #7f8c8d;
+  color: var(--color-text-primary);
   line-height: 1.6;
   font-size: 1rem;
 }
