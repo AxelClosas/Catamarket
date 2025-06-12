@@ -203,6 +203,7 @@
 
   --color-accent-1: #EDEBFA;
   --color-accent-2: #D3F9D8;
+
 }
 
 /*Notion x Minimal Marketplace, estan buenas las card*/
@@ -589,7 +590,7 @@ input[type=checkbox] {
 /*mi perfil*/
 #main-miperfil {
     overflow: auto;
-    background-color: #ddd;
+    background-color: var(--color-accent-1);
     flex: 1;
 }
 
@@ -806,11 +807,11 @@ input[type=checkbox] {
     justify-content: space-between;
     font-size: .75rem;
     margin-top: 10px;
-    color: var(--color-warning);
+    color: var(--color-primary-hover);
     font-weight: bold;
     
     & span:last-child {
-      color: var(--color-secondary);
+      color: var(--color-text-primary);
     }
 
 
@@ -1464,30 +1465,30 @@ footer {
 }
 
 .btn-principal {
-  background: #e74c3c;
+  background-color: var(--color-primary-hover);
   color: white;
   padding: 0.9rem 2.2rem;
   border-radius: 50px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
-  border: 2px solid #e74c3c;
+  border: 2px solid var(--color-primary);
 }
 
 .btn-principal:hover {
-  background: #c0392b;
+  background-color: var(--color-primary);
   transform: scale(1.05);
 }
 
 .btn-secundario {
-  background: white;
-  color: #3498db;
+  background-color: var(--color-primary-contrast);
+  color: var(--color-text-primary);
   padding: 0.9rem 1.8rem;
   border-radius: 50px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s;
-  border: 2px solid #3498db;
+  border: 2px solid var(--color-text-primary);
   display: flex;
   align-items: center;
   gap: 0.5rem;
