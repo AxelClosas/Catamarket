@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="emprendedor.css">
+    <title>Perfil Emprendedor - Marketplace</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="../index.html">
+            <div class="logo">
+                <img src="https://img.icons8.com/?size=100&id=119346&format=png&color=000000" alt="Logo cactus"
+                    width="50px" height="50px">
+            </div>
+        </a>
+
+        <div class="barra_busqueda">
+            <input type="text" placeholder=" Buscar producto o categoría"> <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fas fa-user"></i></a>
+            <i class="fas fa-cart-shopping"></i>
+        </div>
+    </header>
+
+
+
+    <!-- Main Content -->
+    <main id="main-miperfil">
+        <!-- Sección Perfil -->
+        <section class="info-personal">
+            <div class="contenido-personal">
+                <img class="img-perfil"
+                    src="https://images.pexels.com/photos/4307869/pexels-photo-4307869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="Foto de perfil">
+                <div class="datos-perfil">
+                    <h2>Armando Paredes</h2>
+                    <div class="rating">
+                        <div class="estrellas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>4.8 (120 reseñas)</span>
+                    </div>
+                    <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Kabul, Afganistán</p>
+                </div>
+            </div>
+            <!-- Sección Redes -->
+            <div class="contenido-derecho">
+                <!-- vendedor botones-->
+                <div class="botones-vendedor">
+                    <a href="#contactarSeccion" class="boton-contactar">
+                        <p>contactar</p>
+                    </a>
+                    <a href="#reportarVendedor" class="boton-reportar">
+                        <p>Reportar</p>
+                    </a>
+                </div>
+                <!-- Sección Redes -->
+                <div class="redes-sociales">
+                    <a href="#" class="red-social WhatsApp" title="WhatsApp">
+                        <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=000000" alt="WhatsApp">
+                    </a>
+                    <a href="#" class="red-social Instagram" title="Instagram">
+                        <img src="https://img.icons8.com/?size=100&id=32309&format=png&color=000000" alt="Instagram">
+                    </a>
+                    <a href="#" class="red-social Facebook" title="Facebook">
+                        <img src="https://img.icons8.com/?size=100&id=8818&format=png&color=000000" alt="Facebook">
+                    </a>
+                    <a href="#" class="red-social Email" title="Email">
+                        <img src="https://img.icons8.com/?size=100&id=ZE7CF2CQ0DcJ&format=png&color=000000" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Sistema de Tabs "botones para cambiar de informacion"-->
+        <div class="tabs-system">
+            <!-- Mover inputs al mismo nivel que .tabs-content para que funcione, sino no funciona -->
+            <!-- inputs tipo Radio "circulitos clickeables"-->
+            <input type="radio" name="tabs-system" id="tab-vendedor" checked>
+
+            <!-- botones accionables de usuario y vendedor-->
+            <div class="tabs-header">
+
+                <label for="tab-vendedor" class="tab-btn">
+                    <i class="fas fa-store"></i> Perfil del Vendedor
+                </label>
+            </div>
+
+            <!-- Contenido de usuario o vendedor segun el input clickeado del apartado superior "tabs-header"-->
+            <div class="tabs-content">
+                <!--Contenido de Usuario-->
+                <div class="tab-pane" id="content-usuario">
+                </div>
+
+                <!--Contenido de Vendedor-->
+                <div class="tab-pane" id="content-vendedor">
+                    <!--Productos Publicados-->
+                    <div class="producto" id="prodcutos-publicados">
+                        <h3 class="tab-title">Productos Publicados</h3>
+                        <div class="productos-grid">
+                            <article class="producto-card">
+                                <div class="producto-imagen">
+                                    <img src="https://images.pexels.com/photos/1138560/pexels-photo-1138560.jpeg"
+                                        alt="Pantalón de jean">
+                                </div>
+                                <div class="producto-info">
+                                    <h4>Jean slim fit hombre</h4>
+                                    <p class="producto-precio">$18,900 ARS</p>
+                                    <p class="producto-detalle">Stock: 10</p>
+                                    <p class="producto-detalle">Estado: Activo</p>
+                                    <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                </div>
+                            </article>
+
+                            <article class="producto-card">
+                                <div class="producto-imagen">
+                                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_789123-MLA310.jpg"
+                                        alt="Zapatillas deportivas">
+                                </div>
+                                <div class="producto-info">
+                                    <h4>Zapatillas deportivas</h4>
+                                    <p class="producto-precio">$25,000 ARS</p>
+                                    <p class="producto-detalle">Stock: 5</p>
+                                    <p class="producto-detalle">Estado: Pausado</p>
+                                    <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                </div>
+                            </article>
+
+                            <article class="producto-card">
+                                <div class="producto-imagen">
+                                    <img src="https://images.pexels.com/photos/1138560/pexels-photo-1138560.jpeg"
+                                        alt="Pantalón de jean">
+                                </div>
+                                <div class="producto-info">
+                                    <h4>Jean slim fit hombre</h4>
+                                    <p class="producto-precio">$18,900 ARS</p>
+                                    <p class="producto-detalle">Stock: 10</p>
+                                    <p class="producto-detalle">Estado: Activo</p>
+                                    <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                </div>
+                            </article>
+
+                            <article class="producto-card">
+                                <div class="producto-imagen">
+                                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_789123-MLA310.jpg"
+                                        alt="Zapatillas deportivas">
+                                </div>
+                                <div class="producto-info">
+                                    <h4>Zapatillas deportivas</h4>
+                                    <p class="producto-precio">$25,000 ARS</p>
+                                    <p class="producto-detalle">Stock: 5</p>
+                                    <p class="producto-detalle">Estado: Pausado</p>
+                                    <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                </div>
+                            </article>
+
+                            <article class="producto-card">
+                                <div class="producto-imagen">
+                                    <img src="https://images.pexels.com/photos/1138560/pexels-photo-1138560.jpeg"
+                                        alt="Pantalón de jean">
+                                </div>
+                                <div class="producto-info">
+                                    <h4>Jean slim fit hombre</h4>
+                                    <p class="producto-precio">$18,900 ARS</p>
+                                    <p class="producto-detalle">Stock: 10</p>
+                                    <p class="producto-detalle">Estado: Activo</p>
+                                    <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                </div>
+                            </article>
+
+                            <article class="producto-card">
+                                <div class="producto-imagen">
+                                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_789123-MLA310.jpg"
+                                        alt="Zapatillas deportivas">
+                                </div>
+                                <div class="producto-info">
+                                    <h4>Zapatillas deportivas</h4>
+                                    <p class="producto-precio">$25,000 ARS</p>
+                                    <p class="producto-detalle">Stock: 5</p>
+                                    <p class="producto-detalle">Estado: Pausado</p>
+                                    <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                </div>
+                            </article>
+
+
+                        </div>
+                    </div>
+
+
+                    <!--Reseñas Recibidas-->
+                    <div class="resena-recibidas" id="resena-recibidas">
+                        <h3 class="tab-title">Reseñas Recibidas</h3>
+                        <div class="reseñas-list">
+                            <div class="reseña-item">
+                                <p class="reseña-producto">Jean slim fit hombre</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="reseña-comentario">"Excelente producto, muy cómodo."</p>
+                                <p class="reseña-fecha">02/06/2025</p>
+                            </div>
+
+                            <div class="reseña-item">
+                                <p class="reseña-producto">Jean slim fit hombre</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="reseña-comentario">"Excelente producto, muy cómodo."</p>
+                                <p class="reseña-fecha">02/06/2025</p>
+                            </div>
+
+                            <div class="reseña-item">
+                                <p class="reseña-producto">Jean slim fit hombre</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="reseña-comentario">"Excelente producto, muy cómodo."</p>
+                                <p class="reseña-fecha">02/06/2025</p>
+                            </div>
+
+                            <div class="reseña-item">
+                                <p class="reseña-producto">Jean slim fit hombre</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="reseña-comentario">"Excelente producto, muy cómodo."</p>
+                                <p class="reseña-fecha">02/06/2025</p>
+                            </div>
+
+                            <div class="reseña-item">
+                                <p class="reseña-producto">Jean slim fit hombre</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="reseña-comentario">"Excelente producto, muy cómodo."</p>
+                                <p class="reseña-fecha">02/06/2025</p>
+                            </div>
+                        </div>
+                        <div class="section-footer">
+                            <button class="ver-mas">Ver más</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tabs-content">
+            <div class="contacto-emprendedor" id="contactarSeccion">
+                <h3 class="tab-title">Contacto con el vendedor</h3>
+                <form class="formulario" action="" method="">
+                    <div class="reseña-item">
+                        <fieldset class="fieldset-datos">
+                            <legend>
+                                <h4>DATOS PERSONALES</h4>
+                            </legend>
+
+                            <div class="reseña-comentario">
+                                <label for="nombre">Nombre y apellido </label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Nombre completo">
+                            </div>
+                            <div class="reseña-comentario">
+
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="alguien@gmail.com">
+                            </div>
+                            <div class="reseña-comentario">
+
+                                <label for="telefono">Telefono</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="+543854492008"
+                                    minlength="12">
+
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <fieldset class="fieldset-datos">
+                        <legend>
+                            <h4>CUERPO DEL MENSAJE</h4>
+                        </legend>
+
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="Mensaje" id="Mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+                    </fieldset>
+
+
+                    <fieldset class="container-checkbox fieldset-datos">
+                        <legend>
+                            <h4>PRESENCIA</h4>Preferencia de contacto</h4>
+                        </legend>
+                        <div class="checkbox-element">
+                            <input type="checkbox" name="preferencias" id="contacto-email" value="email" checked>
+                            <label for="contacto-email">Email</label>
+                        </div>
+                        <div class="checkbox-element">
+                            <input type="checkbox" name="preferencias" id="contacto-telefono" value="telefono">
+                            <label for="contacto-telefono">Teléfono</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="buttons-container">
+                        <button type="submit" class="btn-submit">Enviar mensaje</button>
+                        <button type="reset" class="btn-reset">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="tabs-content" id="reportarVendedor">
+            <div class="bloquear-usuario">
+                <h3 class="tab-title">Bloquear/Reportar Usuario</h3>
+
+                <textarea name="reportar" id="" placeholder="Escriba aquí el motivo"></textarea>
+
+                <p>¿Estas seguro que deseas bloquear al usuario?</p>
+                <div class="buttons-container">
+                    <button type="submit" class="btn-submit">Si</button>
+                    <button type="reset" class="btn-reset">No</button>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="https://img.icons8.com/?size=100&id=119346&format=png&color=000000"
+                    alt="Logo de la empresa" />
+                <p>Catamarket – Donde lo nuestro se encuentra con vos</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Secciones</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="contacto-Soporte/formulario-contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-envelope"></i> contacto@tusitio.com</p>
+                <p><i class="fas fa-phone"></i> +54 11 1234 5678</p>
+                <div class="social-icons">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Catamarket. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

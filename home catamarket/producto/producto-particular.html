@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto seleccionado</title>
+    <link rel="stylesheet" href="styles_producto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="https://img.icons8.com/?size=100&id=119346&format=png&color=000000" alt="Logo cactus"
+                    width="50px" height="50px">
+            </a>
+        </div>
+
+        <div class="barra_busqueda">
+            <input type="text" placeholder=" Buscar producto o categoría"> <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="icons">
+            <a href="#popupUsuario"><i class="fas fa-user"></i></a>
+            <i class="fas fa-cart-shopping"></i>
+        </div>
+
+        <!-- Popup / Modal -->
+        <div id="popupUsuario" class="modal-overlay">
+            <div class="modal-contenido">
+                <a href="#" class="cerrar-modal">&times;</a>
+                <h3>Opciones</h3>
+                <div class="botones-popup">
+                    <a href="../miPerfil/mi-perfil.html" class="btn-popup">Mi perfil</a>
+                    <a href="../inicioSesion/login.html" class="btn-popup">Iniciar sesión</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-miperfil">
+        <!-- Sección Perfil -->
+        <section class="info-personal">
+            <a href="../perfil_emprendeor/perfil-emprendedor.html" target="_blank">
+                <div class="contenido-personal">
+                    <img class="img-perfil" src="https://images.pexels.com/photos/4307869/pexels-photo-4307869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Foto de perfil">
+                    <div class="datos-perfil">
+                        <h2>Vendedor: Armando Paredes</h2>
+                        <div class="rating">
+                            <div class="estrellas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>4.8 (120 reseñas)</span>
+                        </div>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Kabul, Afganistán</p>
+                    </div>
+                </div>
+            </a>
+
+
+            <div class="contenido-derecho">
+                <!-- vendedor botones-->
+                <div class="botones-vendedor">
+                    <a href="#" class="boton-contactar">
+                        <p>contactar</p>
+                    </a>
+                    <a href="../perfil_emprendeor/perfil-emprendedor.html" class="boton-ver-perfil">
+                        <p>ver perfil</p>
+                    </a>
+                </div>
+                <!-- Sección Redes -->
+                <div class="redes-sociales">
+                    <a href="#" class="red-social WhatsApp" title="WhatsApp">
+                        <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=000000" alt="WhatsApp">
+                    </a>
+                    <a href="#" class="red-social Instagram" title="Instagram">
+                        <img src="https://img.icons8.com/?size=100&id=32309&format=png&color=000000" alt="Instagram">
+                    </a>
+                    <a href="#" class="red-social Facebook" title="Facebook">
+                        <img src="https://img.icons8.com/?size=100&id=8818&format=png&color=000000" alt="Facebook">
+                    </a>
+                    <a href="#" class="red-social Email" title="Email">
+                        <img src="https://img.icons8.com/?size=100&id=ZE7CF2CQ0DcJ&format=png&color=000000" alt="Email">
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!--seccion producto-->
+        <section>
+            <div class="container-producto">
+                <div class="element-producto">
+                    <div class="img-producto">
+                        <img src="https://images.pexels.com/photos/1138560/pexels-photo-1138560.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="imagen producto">
+                    </div>
+                    <div class="caracteristicas">
+                        <h3 class="info-product-h3">Caracteristicas del producto</h3>
+                        <div class="container-tabla">
+                            <table>
+                                <tr>
+                                    <th>Marca</th>
+                                    <td>Papryka</td>
+                                </tr>
+                                <tr>
+                                    <th>Modelo</th>
+                                    <td>Slim Fit</td>
+                                </tr>
+                                <tr>
+                                    <th>Genero</th>
+                                    <td>Mujer</td>
+                                </tr>
+                                <tr>
+                                    <th>Colores</th>
+                                    <td>Morado, Verde, Turquesa</td>
+                                </tr>
+                                <tr>
+                                    <th>Talles</th>
+                                    <td>36 - 38 - 42 - 46</td>
+                                </tr>
+                            </table>
+
+
+                            <table>
+                                <tr>
+                                    <th>Material principal</th>
+                                    <td>Poliéster</td>
+                                </tr>
+                                <tr>
+                                    <th>Tipo de pantalón</th>
+                                    <td>Jeans</td>
+                                </tr>
+                                <tr>
+                                    <th>Tiro del pantalón</th>
+                                    <td>Alto</td>
+                                </tr>
+                                <tr>
+                                    <th>Corte del pantalón</th>
+                                    <td>Chupin</td>
+                                </tr>
+                                <tr>
+                                    <th>Temporada de lanzamiento </th>
+                                    <td>Verano/Primavera</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h3 class="info-product-h3">Descripcion del producto</h3>
+                        <p>Jeab Slim Fit Azul claro super elastizado! Una Bomba!
+                            Tiro super alto! Marca muy bien la figura, en caso de querer estar más cómoda, llevarse un
+                            talle
+                            más.
+                            a simple vista parece chico ya que es de una tela importada super elastizada, aconsejamos
+                            probarlo! en caso de que lo necesites podés solicitar un cambio!.</p>
+                    </div>
+                </div>
+
+                <div class="element-lateral">
+                    <h2>Jeans Slim Fit Azul - Papryka</h2>
+                    <fieldset>
+                        <legend>
+                            <h3 class="clase-h3">Precio: </h3>
+                        </legend>
+                        <p>$5.500</p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            <h3 class="clase-h3">Stock disponible:</h3>
+                        </legend>
+                        <p>5</p>
+                    </fieldset>
+
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <!--seccion reseña-->
+        <section class="container">
+            <h2 class="section-title">Califica al emprendedor</h2>
+            <div class="divider"></div>
+            <div class="current-rating">
+                <div class="rating-average">4.2</div>
+                <div class="stars-container">
+                    <span class="star active">★</span>
+                    <span class="star active">★</span>
+                    <span class="star active">★</span>
+                    <span class="star active">★</span>
+                    <span class="star">★</span>
+                </div>
+                <div class="rating-count">(32 valoraciones)</div>
+            </div>
+
+            <form class="rating-form" action="#" method="POST">
+                <div class="form-group">
+                    <label>¿Cómo calificarías tu experiencia?</label>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5">★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">★</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Comparte tu experiencia (opcional)</label>
+                    <textarea id="comment" name="comment"
+                        placeholder="Cuéntanos qué te parecieron los productos, el servicio, la atención..."></textarea>
+                </div>
+
+                <button type="submit" class="btn">Enviar calificación</button>
+            </form>
+
+            <h2 class="section-title">Opiniones de la comunidad</h2>
+            <div class="divider"></div>
+
+            <div class="reviews-list">
+                <div class="review">
+                    <div class="review-header">
+                        <div class="review-user">Ana Martínez</div>
+                        <div class="review-date">20 de junio, 2023</div>
+                    </div>
+                    <div class="review-stars">
+                        <span class="star active">★</span>
+                        <span class="star active">★</span>
+                        <span class="star active">★</span>
+                        <span class="star active">★</span>
+                        <span class="star active">★</span>
+                    </div>
+                    <div class="review-content">
+                        <p>Excelente calidad en los productos y muy buena atención. El pedido llegó antes de lo esperado
+                            y todo en perfecto estado. ¡Totalmente recomendado!</p>
+                    </div>
+                    <div class="review-response">
+                        <span class="response-label">Respuesta del emprendedor:</span>
+                        <p>¡Gracias por tu confianza, Ana! Nos alegra que hayas tenido una buena experiencia con
+                            nosotros.</p>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="review-header">
+                        <div class="review-user">Carlos Rodríguez</div>
+                        <div class="review-date">15 de junio, 2023</div>
+                    </div>
+                    <div class="review-stars">
+                        <span class="star active">★</span>
+                        <span class="star active">★</span>
+                        <span class="star active">★</span>
+                        <span class="star active">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="review-content">
+                        <p>Buenos productos, aunque el empaque podría mejorar. La comunicación con el vendedor fue muy
+                            buena y resolvieron mis dudas rápidamente.</p>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="review-header">
+                        <div class="review-user">Lucía Fernández</div>
+                        <div class="review-date">10 de junio, 2023</div>
+                    </div>
+                    <div class="review-stars">
+                        <span class="star active">★</span>
+                        <span class="star active">★</span>
+                        <span class="star active">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="review-content">
+                        <p>Productos como se describen, pero el envío tardó más de lo esperado. El vendedor fue amable
+                            al responder mis consultas sobre el seguimiento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="https://img.icons8.com/?size=100&id=119346&format=png&color=000000"
+                    alt="Logo de la empresa" />
+                <p>Catamarket – Donde lo nuestro se encuentra con vos</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Secciones</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="../contacto-Soporte/formulario-contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-envelope"></i> contacto@tusitio.com</p>
+                <p><i class="fas fa-phone"></i> +54 11 1234 5678</p>
+                <div class="social-icons">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Catamarket. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

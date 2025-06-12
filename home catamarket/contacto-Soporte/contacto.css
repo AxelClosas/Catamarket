@@ -1,0 +1,196 @@
+:root {
+    --color-background: #F9FAFB;
+    --color-surface: #FFFFFF;
+    --color-text-primary: #111827;
+    --color-text-secondary: #6B7280;
+    --color-border: #E5E7EB;
+    --color-muted: #F3F4F6;
+
+    --color-primary: #3B82F6;
+    --color-primary-hover: #2563EB;
+    --color-primary-contrast: #FFFFFF;
+
+    --color-secondary: #10B981;
+    --color-secondary-hover: #059669;
+    --color-secondary-contrast: #FFFFFF;
+
+    --color-error: #EF4444;
+    --color-success: #22C55E;
+    --color-warning: #F59E0B;
+
+    --color-accent-1: #E0F2FE;
+    --color-accent-2: #FEF3C7;
+
+    --border-radius: 8px;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    background-image: url("https://media.istockphoto.com/id/522449289/photo/black-lagoon-volcano-pissis-catamarca-argentina.jpg?s=2048x2048&w=is&k=20&c=I92iu6x8tvMXe24rZ4oNOUr0Up_yatU8m3R14weHQ6s=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+form {
+    background-color: white;
+    border-radius: var(--border-radius);
+    margin: 0;
+    min-width: 20rem;
+    padding: 10px;
+    color: var(--color-primaryy);
+    width: min(35rem, 100%);
+}
+
+fieldset {
+    margin-top: 15px;
+    border: none;
+    background-color: var(--color-primary-contrast);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.21);
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    padding: 0 16px 16px 16px;
+}
+
+legend {
+    color: var(--color-accent-1);
+    text-align: left;
+    font-weight: 600;
+    border: solid 2px var(--primary);
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius);
+    padding: 6px;
+    font-size: 0.825rem;
+    text-transform: uppercase;
+}
+
+label {
+    max-width: fit-content;
+    padding: 8px;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-top: solid 1px var(--primary);
+    border-left: solid 1px var(--primary);
+    border-right: solid 1px var(--primary);
+    background-color: var(--alerta);
+}
+
+input,
+textarea {
+    color: var(--color-text-secondary);
+    box-shadow: var(--shadow);
+    padding: 8px;
+    border: solid 1px var(--color-primary);
+    border-radius: var(--border-radius);
+    background-color: var(--text-primary);
+    font-family: 'Open Sans', sans-serif;
+}
+
+textarea {
+    height: 5rem;
+}
+
+textarea::-webkit-scrollbar {
+    width: 6px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: var(--color-accent-1);
+}
+
+input:hover,
+textarea:hover {
+    background-color: var(--color-primary);
+    transition: 0.3s;
+    color: white;
+    border-color: var(--color-border);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-accent-1);
+    border-color: transparent;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-checkbox {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+}
+
+.container-checkbox label {
+    background-color: var(--background);
+    border: none;
+}
+
+
+.buttons-container {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+button, .btn-reset {
+    color: var(--color-primary-contrast);
+    font-size: 18px;
+    padding: 12px;
+    border: solid 1px var(--primary);
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius);
+    width: min(12rem, 100%);
+}
+
+.btn-reset {
+    background-color: var(--color-primary-contrast);
+    color: var(--color-primary-hover);
+    border: 1px solid var(--color-primary-hover);
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-reset:hover{
+    background-color: var(--color-primary-hover);
+    color: var(--color-primary-contrast);
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--color-primary-hover);
+    transition: 0.3s;
+    color: var(--color-primary-contrast);
+}

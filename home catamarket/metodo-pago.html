@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="carrito.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <title>Catamarket</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://img.icons8.com/?size=100&id=119346&format=png&color=000000" alt="Logo cactus" width="50px"
+          height="50px">
+      </a>
+    </div>
+
+    <div class="barra_busqueda">
+      <input type="text" placeholder=" Buscar producto o categoría"> <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <div class="icons">
+      <a href="#popupUsuario"><i class="fas fa-user"></i></a>
+      <a href="carrito.html"><i class="fas fa-cart-shopping"></i></a>
+    </div>
+
+    <!-- Popup / Modal -->
+    <div id="popupUsuario" class="modal-overlay">
+      <div class="modal-contenido">
+        <a href="#" class="cerrar-modal">&times;</a>
+        <h3>Opciones</h3>
+        <div class="botones-popup">
+          <a href="mi-perfil.html" class="btn-popup">Mi perfil</a>
+          <a href="login.html" class="btn-popup">Iniciar sesión</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenedor Sidebar y mi perfil -->
+  <div class="contenedor-sidebar-miperfil">
+    <!-- Contenido principal -->
+    <main id="main-miperfil">
+      <h1>Elije tu método de pago</h1>
+
+      <div class="contenedor-carrito-compras">
+        <div class="contenedor-carrito">
+          <section class="contenedor-formulario-completo">
+            <h2>Nueva tarjeta de crédito</h2>
+            <div class="contenedor-metodo-pago">
+              <div class="metodo-pago">
+                <input type="radio" name="metodoPago" id="tarjetaCredito" checked>
+
+                <label for="tarjetaCredito">
+                  <i class="fa-solid fa-credit-card"></i>
+                  Nueva tarjeta de crédito</label>
+              </div>
+              <div class="metodo-pago">
+                <input type="radio" name="metodoPago" disabled id="tarjetaDebito">
+
+                <label for="tarjetaDebito">
+                  <i class="fa-regular fa-credit-card"></i>
+                  Nueva tarjeta de débito<span><small>Próximamente</small></span></label>
+              </div>
+            </div>
+
+            <h2>Otros medios de pago</h2>
+            <div class="contenedor-metodo-pago">
+              <div class="metodo-pago">
+                <input type="radio" name="metodoPago" disabled id="efectivo">
+
+                <label for="efectivo">
+                  <i class="fa-solid fa-money-bill-1-wave"></i>
+                  Efectivo <span><small>Próximamente</small></span></label>
+              </div>
+              <div class="metodo-pago">
+                <input type="radio" name="metodoPago" disabled id="crypto">
+
+                <label for="crypto">
+                  <i class="fa-brands fa-bitcoin"></i>
+                  Crypto <span><small>Próximamente</small></span></label>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="contenedor-info-compra">
+          <h2>Información de la Compra</h2>
+          <section class="contenedor-info-productos">
+            <div class="contenedor-info">
+              <p>Productos (3)</p>
+              <p>$100.000</p>
+            </div>
+            <div class="contenedor-info">
+              <a href="">Envío a Calle Siempre Viva 742, Springfield, Argentina</a>
+            </div>
+
+            <div class="contenedor-info">
+              <a href="">Ingresar un cupón de descuento</a>
+            </div>
+            <div class="contenedor-info">
+              <p>Total</p>
+              <p>$100.000</p>
+            </div>
+            <a href="metodo-pago-formulario.html"><button class="boton">Continuar</button></a>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="https://img.icons8.com/?size=100&id=119346&format=png&color=000000" alt="Logo de la empresa" />
+        <p>Catamarket – Donde lo nuestro se encuentra con vos</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p><i class="fas fa-envelope"></i> contacto@tusitio.com</p>
+        <p><i class="fas fa-phone"></i> +54 11 1234 5678</p>
+        <div class="social-icons">
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Catamarket. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

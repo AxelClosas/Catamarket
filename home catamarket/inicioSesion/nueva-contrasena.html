@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva contraseña</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos-cambio-contrasena.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <main class="contenedor-recuperacion">
+        <section id="recuperar-contrasena" class="seccion-recuperacion">
+            <h1 class="titulo-seccion">Recuperar contraseña</h1>
+
+            <p class="descripcion-seccion">Define una nueva contraseña segura para restablecer el acceso a tu cuenta.</p>
+
+            <form id="formulario-recuperacion" class="formulario" action="../index.html">
+                <div class="form-group password-group">
+                    <label for="nueva-contrasena">Nueva contraseña:</label>
+                    <input type="password" id="nueva-contrasena" name="nueva-contrasena"
+                        placeholder="Mínimo 8 caracteres" minlength="8"
+                        aria-describedby="ayuda-contrasena">
+                    <i class="fa-solid fa-eye toggle-password" onclick="togglePassword('nueva-contrasena', this)"></i>
+                    <small id="ayuda-contrasena" class="texto-ayuda">Debe incluir letras y números.</small>
+                </div>
+
+                <div class="form-group password-group">
+                    <label for="confirmar-contrasena">Repetir contraseña:</label>
+                    <input type="password" id="confirmar-contrasena" name="confirmar-contrasena"
+                        placeholder="Vuelve a escribir la contraseña" aria-describedby="ayuda-confirmacion">
+                    <i class="fa-solid fa-eye toggle-password"
+                        onclick="togglePassword('confirmar-contrasena', this)"></i>
+                    <small id="ayuda-confirmacion" class="texto-ayuda">Ambos campos deben coincidir.</small>
+                </div>
+
+                <div class="botones-formulario">
+                    <button type="submit" class="boton boton-primario">Cambiar contraseña</button>
+
+                    <button type="reset" class="boton boton-secundario">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function togglePassword(id, icon) {
+            const input = document.getElementById(id);
+            const isPassword = input.type === "password";
+            input.type = isPassword ? "text" : "password";
+
+            // Alternar íconos
+            icon.classList.toggle("fa-eye");
+            icon.classList.toggle("fa-eye-slash");
+        }
+    </script>
+</body>
+
+</html>

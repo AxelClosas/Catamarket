@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://img.icons8.com/?size=100&id=119346&format=png&color=000000" alt="Logo cactus" width="50px"
+                    height="50px">
+            </a>
+        </div>
+
+        <div class="barra_busqueda">
+            <input type="text" placeholder=" Buscar producto o categoría"> <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="icons">
+            <a href="#popupUsuario"><i class="fas fa-user"></i></a>
+            <a href="carrito.html"><i class="fas fa-cart-shopping"></i></a>
+        </div>
+
+        <!-- Popup / Modal -->
+        <div id="popupUsuario" class="modal-overlay">
+            <div class="modal-contenido">
+                <a href="#" class="cerrar-modal">&times;</a>
+                <h3>Opciones</h3>
+                <div class="botones-popup">
+                    <a href="miPerfil/mi-perfil.html" class="btn-popup">Mi perfil</a>
+                    <a href="inicioSesion/login.html" class="btn-popup">Iniciar sesión</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor Sidebar y mi perfil -->
+    <div class="contenedor-sidebar-miperfil">
+        <!-- Sidebar -->
+        <div id="icon-categoria">
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu"
+                class="sidebarIconToggle custom-btn btn-12"><span>Abrir/Cerrar</span><span>categoria</span></label>
+
+            <div id="sidebarMenu">
+                <ul class="sidebarMenuInner">
+                    <li><a href="#Oferta-Destacada">Ofertas destacadas</a></li>
+                    <li><a href="#Hogar">Hogar</a></li>
+                    <li><a href="#Tecnologia">Tecnología</a></li>
+                    <li><a href="#Belleza">Belleza</a></li>
+                    <li><a href="#Construccion">Construcción</a></li>
+                    <li><a href="#Juguetes">Juguetes</a></li>
+                    <li><a href="#Ropa">Ropa & Calzado</a></li>
+                    <li><a href="#Herramientas">Herramientas</a></li>
+                    <li><a href="#Mascotas">Mascotas</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contenido principal -->
+        <main id="main-miperfil">
+
+            <section class="hero">
+                <div class="seccion-textos">
+                    <h1>¡Lo mejor de Catamarca, a solo un clic de distancia!</h1> 
+                    <h3>PRODUCTOS UNICOS, PRECIOS JUSTOS Y ATENCION DE GENTE DE TU CIUDAD</h3>
+                </div>
+            </section>
+
+            <section id="funcionamiento" class="seccion-pasos">
+                <div class="contenido">
+                    <h2 class="titulo-seccion">Compra local en 3 pasos</h2>
+                    <p class="subtitulo-seccion">Así de fácil es apoyar el comercio de tu zona</p>
+
+                    <div class="pasos-container">
+                        <div class="paso-card">
+                            <div class="paso-numero">1</div>
+                            <div class="paso-icono">📍</div>
+                            <h3 class="paso-titulo">Busca cerca de ti</h3>
+                            <p class="paso-descripcion">Filtra por distancia o explora negocios en tu barrio</p>
+                        </div>
+
+                        <div class="paso-card">
+                            <div class="paso-numero">2</div>
+                            <div class="paso-icono">🛒</div>
+                            <h3 class="paso-titulo">Agrega al carrito</h3>
+                            <p class="paso-descripcion">Selecciona productos de múltiples tiendas en un solo pedido</p>
+                        </div>
+
+                        <div class="paso-card">
+                            <div class="paso-numero">3</div>
+                            <div class="paso-icono">🚚</div>
+                            <h3 class="paso-titulo">Recibe o recoge</h3>
+                            <p class="paso-descripcion">Coordina la entrega de tus productos con el vendedor</p>
+                        </div>
+                    </div>
+
+                    <div class="cta-pasos">
+                        <a href="#registro" class="btn-principal">Empieza ahora</a>
+                        <a href="#video-tutorial" class="btn-secundario">
+                            <span class="icono-play">▶</span> Ver demostración
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Ofertas destacadas -->
+            <section class="articulo-publicados" id="Oferta-Destacada">
+                <h2>Ofertas destacadas</h2>
+                <div class="contenedor-articulos">
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://images.pexels.com/photos/1138560/pexels-photo-1138560.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="Pantalón de jean azul ">
+                                <!-- Bandera de descuento -->
+                                <div class="bandera-descuento oferta-25">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                    <i class="fas fa-tags"></i></i> <!-- Ícono de cupón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Jeans Azul</h2>
+                                <p class="descripcion">Jeans de corte recto y tiro medio,
+                                confeccionados en denim elástico para mayor comodidad y estilo diario.
+                                </p>
+                                <div class="precio">$5.500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.2 (36)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://images.pexels.com/photos/28773016/pexels-photo-28773016/free-photo-of-concierto-en-vivo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="Smartphone moderno color negro">
+                                <!-- Bandera de descuento -->
+                                <div class="bandera-descuento oferta-55">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                    <i class="fas fa-tags"></i></i> <!-- Ícono de cupón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Google Pixel 9</h2>
+                                <p class="descripcion">Pixel 9 con cámara avanzada de inteligencia artificial y
+                                    rendimiento fluido, ideal para fotos increíbles y uso diario.</p>
+                                <div class="precio">$650.000</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.8 (6)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://images.pexels.com/photos/5766461/pexels-photo-5766461.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="Caja de herramientas con destornilladores">
+                                <!-- Bandera de descuento -->
+                                <div class="bandera-descuento oferta-70">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                    <i class="fas fa-tags"></i></i> <!-- Ícono de cupón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Caja de Herramientas</h2>
+                                <p class="descripcion">Caja de herramientas, para trabajos de hogar y
+                                    uso profecional .</p>
+                                <div class="precio">$50.00</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.0 (20)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://images.pexels.com/photos/12765619/pexels-photo-12765619.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="Auto Ford Fiesta modelo 2014">
+                                <!-- Bandera de descuento -->
+                                <div class="bandera-descuento oferta-15">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                    <i class="fas fa-tags"></i></i> <!-- Ícono de cupón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Ford Fiesta 2014</h2>
+                                <p class="descripcion">Modelo 2014, con 300mil kilometros, servis al dia
+                                    sin ningun desperfecto .</p>
+                                <div class="precio">$850.000</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 3.5 (8)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://images.pexels.com/photos/6748334/pexels-photo-6748334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="Zapatillas deportivas negras">
+                                <!-- Bandera de descuento -->
+                                <div class="bandera-descuento oferta-80">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                    <i class="fas fa-tags"></i></i> <!-- Ícono de cupón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Zapatillas Puma</h2>
+                                <p class="descripcion">Zapatillas elegantes y comodas, para uso diario
+                                    y uso deportivos.</p>
+                                <div class="precio">$19.500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.0 (60)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- Hogar -->
+            <section class="articulo-publicados" id="Hogar">
+                <h2>Hogar</h2>
+                <div class="contenedor-articulos">
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://acdn-us.mitiendanube.com/stores/001/307/082/products/powerspring-pillow-colchon-2p-doble-jpg-1540bc3583581a1b1517200150260695-1024-1024.jpg"
+                                    alt="Colchon Queen">
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Colchon Queen </h2>
+                                <p class="descripcion">Creacion de un productor regional, siguiendo
+                                    las mejores tecnologias para tu confort .</p>
+                                <div class="precio">$60.500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.7 (26)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://www.puntoblu.com.ar/media/catalog/product/cache/a25633f412130ee0a2552545c161c01c/3/2/324083254_863775978264202_4178429619542199845_n_1.jpg"
+                                    alt="Biblioteca Kali">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Biblioteca Kali - Roble</h2>
+                                <p class="descripcion">Biblioteca elaborada de madera de Robles,
+                                    producidas por artesanos de Santa Maria.</p>
+                                <div class="precio">$30.500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 3.9 (16)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://acdn-us.mitiendanube.com/stores/001/179/290/products/screenshot_20231129-131856-4acfd7b7d2d76fea6217012749422786-1024-1024.png"
+                                    alt="Cortinas Negras">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Cortinas Negras</h2>
+                                <p class="descripcion">Cortina de algodon,elaboradas siguiendo
+                                    las tradiciones regionales.</p>
+                                <div class="precio">$11.500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.5 (60)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://acdn-us.mitiendanube.com/stores/001/100/570/products/image-694f60b871f72857b716185070862867-1024-1024."
+                                    alt="Mesa y Sillas de pino">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Juego de Comedor de Pino </h2>
+                                <p class="descripcion">Mesa y 6 sillas de madera de pino,
+                                    fabricadas en Santa Rosa.</p>
+                                <div class="precio">$70.500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 3.8 (30)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://acdn-us.mitiendanube.com/stores/005/169/928/products/bnt140-1000_300-af9fc01ea59a3d384517275619342776-1024-1024.jpg"
+                                    alt="Alfombra de fibras">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Alfombra de fibras</h2>
+                                <p class="descripcion">Elaborando alfombras desde 1980, produccion
+                                    regional y artesanal.</p>
+                                <div class="precio">$8.500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 3.5 (36)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!--parallax-->
+            <section id="beneficios-marketplace" class="beneficios-marketplace"
+                aria-labelledby="beneficios-marketplace-title">
+                <div class="contenido">
+                    <h2 id="beneficios-marketplace-title" class="section-title">Ventajas de nuestro Marketplace</h2>
+                    <div class="beneficios-grid-marketplace">
+                        <div class="beneficio-marketplace">
+                            <div class="beneficio-icon">🛒</div>
+                            <h3>Experiencia de Compra Fluida</h3>
+                            <p>Interfaz intuitiva con proceso de compra optimizado en solo 3 clics.</p>
+                        </div>
+                        <div class="beneficio-marketplace">
+                            <div class="beneficio-icon">🚚</div>
+                            <h3>Envíos Rápidos</h3>
+                            <p>Red logística integrada con entregas express en 24-48 horas.</p>
+                        </div>
+                        <div class="beneficio-marketplace">
+                            <div class="beneficio-icon">💳</div>
+                            <h3>Múltiples Métodos de Pago</h3>
+                            <p>Aceptamos tarjetas, transferencias y las principales billeteras digitales.</p>
+                        </div>
+                        <div class="beneficio-marketplace">
+                            <div class="beneficio-icon">🌟</div>
+                            <h3>Programa de Recompensas</h3>
+                            <p>Acumula puntos con cada compra y redímelos por descuentos exclusivos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tecnologia-->
+            <section class="articulo-publicados" id="Tecnologia">
+                <h2>Tecnología</h2>
+                <div class="contenedor-articulos">
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://www.comeros.com.ar/wp-content/uploads/2021/06/Comeros-EPSON-V11H978021-1.jpg"
+                                    alt="Prpyector Epson">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Proyector EPSON</h2>
+                                <p class="descripcion">Proyector portátil Full HD con alto brillo y conexión inalámbrica,
+                                     ideal para cine en casa o presentaciones profesionales.</p>
+                                <div class="precio">$180.000</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.2 (26)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://electroluxar.vtexassets.com/arquivos/ids/162787-1200-1200?v=638217411739170000&width=1200&height=1200&aspect=true"
+                                    alt="Aspiradora Robot">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Aspiradora Robot</h2>
+                                <p class="descripcion">Aspiradora robot inteligente con sensores 360° y programación automática,
+                                    perfecta para mantener tus pisos limpios sin esfuerzo.</p>
+                                <div class="precio">$1.000.000</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 5.0 (13)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://atma.com.ar/media/catalog/product/cache/c8f6a96bef9e9f64cd4973587df2520f/f/r/fr901dp_iafbsm0000.jpg"
+                                    alt="Freidora de Aire Atma">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Freidora de Aire ATMA</h2>
+                                <p class="descripcion">Freidora de aire sin aceite con capacidad 10L y múltiples funciones,
+                                    ideal para cocinar más saludable y rápido.</p>
+                                <div class="precio">$150.000</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.4 (15)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://philco.com.ar/media/catalog/product/cache/2afe2f66dc19e81f1bb37499d22783e0/p/h/phnt367xd0059_1.jpg"
+                                    alt="Heladera PHILCO">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Heladera PHILCO</h2>
+                                <p class="descripcion">Heladera Philco con freezer superior, amplia capacidad y tecnología de enfriamiento
+                                     uniforme para conservar tus alimentos por más tiempo.</p>
+                                <div class="precio">$420.000</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 3.9 (6)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://acdn-us.mitiendanube.com/stores/001/593/734/products/ng-a100bt-pl-angulo1-8d30f7d17ecc9b8c8e16518679401776-1024-1024.jpg"
+                                    alt="Headset Bluetooh">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Headset Inalambricos</h2>
+                                <p class="descripcion">Auriculares inalámbricos con sonido envolvente y diseño ergonómico,
+                                     perfectos para disfrutar de tu música con total libertad.</p>
+                                <div class="precio">$29.800</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.1 (18)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- Belleza -->
+            <section class="articulo-publicados" id="Belleza">
+                <h2>Belleza</h2>
+                <div class="contenedor-articulos">
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://m.media-amazon.com/images/I/31nN4546JyL.jpg"
+                                    alt="Lapiz Labial Maybelline ">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Lapiz Labial Maybelline</h2>
+                                <p class="descripcion">Lápiz labial Maybelline de alta duración y color intenso, con acabado mate y
+                                   fórmula hidratante para un look impecable todo el día.</p>
+                                <div class="precio">$15.500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.0 (30)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://images.fravega.com/f300/8d1883fb110c245a80570f5188460c0b.jpg.webp"
+                                    alt="Plancha de Pelo GAMA">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Plancha de Pelo GAMA</h2>
+                                <p class="descripcion">Plancha de pelo con placas de cerámica y control de temperatura,
+                                     ideal para un alisado suave, brillante y sin frizz.</p>
+                                <div class="precio">$22.200</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.8 (45)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/08/17/16607247094810.jpg"
+                                    alt="Afeitadora electrica">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Afeitadora electrica</h2>
+                                <p class="descripcion">Afeitadora eléctrica con cabezales flexibles y corte preciso,
+                                     diseñada para un afeitado cómodo, rápido y al ras.</p>
+                                <div class="precio">$17.300</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.4 (11)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://images.fravega.com/f300/d20e3819fd8313f84d3e04c28ab2e155.jpg.webp"
+                                    alt="Depiladora Electrica">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Depiladora Electrica</h2>
+                                <p class="descripcion">Depiladora eléctrica con cabezal de precisión y tecnología de extracción suave,
+                                     ideal para una piel lisa por semanas.</p>
+                                <div class="precio">$18.000</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.1 (10)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://www.silfab.com.ar/media/catalog/product/cache/1/small_image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/7/7/7798028884698_1_1.jpg"
+                                    alt="Secador de Pelo">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Secador de Pelo</h2>
+                                <p class="descripcion">Secador de pelo con tecnología iónica y motor de alto rendimiento,
+                                    para un secado rápido, sin frizz y con brillo profesional.</p>
+                                <div class="precio">$21.100</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.3 (17)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section id="eventos-locales" class="seccion-eventos">
+                <div class="contenido">
+                    <h2 class="titulo-seccion">Ferias y eventos cerca de ti</h2>
+                    <p class="subtitulo-seccion">Conectamos con la vida de tu barrio</p>
+
+                    <div class="grid-eventos">
+                        <!-- Evento 1 -->
+                        <article class="card-evento">
+                            <div class="fecha-evento">
+                                <span class="dia">15</span>
+                                <span class="mes">MAR</span>
+                            </div>
+                            <div class="contenido-evento">
+                                <h3>Feria de Emprendedores</h3>
+                                <div class="info-evento">
+                                    <span class="icono">📍</span>
+                                    <p>Manzana Del Turismo - 10am a 6pm</p>
+                                </div>
+                                <div class="info-evento">
+                                    <span class="icono">📌</span>
+                                    <p>Barrio Colon</p>
+                                </div>
+                                <a href="#" class="btn-evento">Agendar en calendario</a>
+                            </div>
+                        </article>
+
+                        <!-- Evento 2 -->
+                        <article class="card-evento">
+                            <div class="fecha-evento">
+                                <span class="dia">22</span>
+                                <span class="mes">MAR</span>
+                            </div>
+                            <div class="contenido-evento">
+                                <h3>Mercado Orgánico</h3>
+                                <div class="info-evento">
+                                    <span class="icono">📍</span>
+                                    <p>Predio Ferial - 9am a 7pm</p>
+                                </div>
+                                <div class="info-evento">
+                                    <span class="icono">📌</span>
+                                    <p>Zona Norte</p>
+                                </div>
+                                <a href="#" class="btn-evento">Ver participantes</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="enlace-seccion">
+                        <a href="#" class="ver-mas">Ver todos los eventos →</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Construccion -->
+            <section class="articulo-publicados" id="Construccion">
+                <h2>Construcción</h2>
+                <div class="contenedor-articulos">
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Stapel_bakstenen_-_Pile_of_bricks_2005_Fruggo.jpg/1200px-Stapel_bakstenen_-_Pile_of_bricks_2005_Fruggo.jpg"
+                                    alt="Palet de Ladrillos">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Ladrillos</h2>
+                                <p class="descripcion">Ladrillos resistentes y duraderos, ideales para construcciones sólidas
+                                    y de alta calidad.</p>
+                                <div class="precio">$630</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.9 (110)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://grupocanarias.com.ar/wp-content/uploads/2020/07/bolsa-50kg-cemento-avellaneda.jpg"
+                                    alt="Bolsa de Cemento 50Kg">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Bolsa de Cemento 50Kg</h2>
+                                <p class="descripcion">Bolsa de cemento Portland de alta resistencia, ideal para obras y
+                                     reparaciones duraderas.</p>
+                                <div class="precio">$6.800</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.5 (56)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://arcencohogar.vtexassets.com/arquivos/ids/390895-800-800?v=638763495919900000&width=800&height=800&aspect=true"
+                                    alt="Barras de Acero 3.8mm">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Barras de Acero 3.8mm x 12mts</h2>
+                                <p class="descripcion">Barras de acero de 3.8 mm con alta resistencia y flexibilidad,
+                                     ideales para refuerzos estructurales precisos.</p>
+                                <div class="precio">$7.700</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.1 (44)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://acdn-us.mitiendanube.com/stores/002/199/725/products/bolson-mixto-41fbf84a381431baba17168258039068-1024-1024.jpg"
+                                    alt="Bolsa de Arena">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">500Kg de Arena</h2>
+                                <p class="descripcion">Bolsa de arena limpia y compacta de 500 kg, perfecta para mezcla de concreto y
+                                    trabajos de construcción.</p>
+                                <div class="precio">$17.790</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.5 (23)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://http2.mlstatic.com/D_NQ_NP_882599-MLA31064310196_062019-O.webp"
+                                    alt="Baldosas para pisos">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Baldosas</h2>
+                                <p class="descripcion">Baldosas resistentes y antideslizantes, ideales para pisos duraderos y
+                                     de fácil mantenimiento.</p>
+                                <div class="precio">$1.100</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.6 (56)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- Juguetes -->
+            <section class="articulo-publicados" id="Juguetes">
+                <h2>Juguetes</h2>
+                <div class="contenedor-articulos">
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://tiendaraices.com.ar/wp-content/uploads/2022/04/Tateti-1.jpg"
+                                    alt="TaTeTi de Madera">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">TaTeTi de Madera</h2>
+                                <p class="descripcion">Elaborado artesanalmente con Algarrobos de Belen,
+                                    produciendo juguetes desde 1950.</p>
+                                <div class="precio">$8500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.0 (25)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://dcdn-us.mitiendanube.com/stores/001/621/882/products/lk106103-21-2646b9600f1b90163016781928925268-1024-1024.jpeg"
+                                    alt="Tompro de Madera">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Tompro de Madera</h2>
+                                <p class="descripcion">Trompo de madera artesanal con diseño clásico, ideal para juegos
+                                    tradicionales y colección.</p>
+                                <div class="precio">$3.500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 3.8 (14)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://www.shutterstock.com/image-illustration/rocking-horse-watercolor-illustration-hand-600nw-2418642605.jpg"
+                                    alt="Caballo de Madere para Niños">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Caballo de Madera</h2>
+                                <p class="descripcion">Caballo de madera artesanal con diseño clásico, ideal para decoración o
+                                    juegos infantiles con estilo rústico.</p>
+                                <div class="precio">$30.000</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.1 (30)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://m.media-amazon.com/images/I/61KZQkxncLL._AC_UF894,1000_QL80_.jpg"
+                                    alt="Sapo De La Suerte De Madera">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Sapo De La Suerte De Madera</h2>
+                                <p class="descripcion">Sapo de la suerte de madera con sonido musical al frotar, pieza artesanal
+                                    que atrae prosperidad y armoniza el ambiente.</p>
+                                <div class="precio">$9.700</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.8 (26)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://http2.mlstatic.com/D_NQ_NP_821323-MLA74553001448_022024-O.webp"
+                                    alt="Juego De Tiro Al Blanco">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Juego De Tiro Al Blanco</h2>
+                                <p class="descripcion">Juego de tiro al blanco con dardos seguros y tablero resistente,
+                                     ideal para entretenimiento y práctica de puntería.</p>
+                                <div class="precio">$8500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.8 (36)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section id="cta-comercios-locales" class="cta-comercios" aria-labelledby="cta-comercios-title">
+                <div class="contenido-comercios">
+                    <div class="cta-comercios-contenido">
+                        <div class="cta-comercios-texto">
+                            <h2 id="cta-comercios-title">¿Tienes un negocio local?</h2>
+                            <p>Únete a la plataforma que está revolucionando el comercio en tu ciudad</p>
+                            <ul class="ventajas-comercios">
+                                <li>✓ Visibilidad en tu zona</li>
+                                <li>✓ Sin costos iniciales</li>
+                                <li>✓ Soporte personalizado</li>
+                                <li>✓ Pagos seguros semanales</li>
+                                <li>✓ App de gestión incluida</li>
+                            </ul>
+                        </div>
+                        <div class="cta-comercios-botones">
+                            <a href="#registro-comercios" class="btn-registro-comercio">Registra tu negocio</a>
+                            <a href="#info-comercios" class="btn-info-comercio">Ver casos de éxito</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ropa & calzado -->
+            <section class="articulo-publicados" id="Ropa">
+                <h2>Ropa & Calzado</h2>
+                <div class="contenedor-articulos">
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://elboyero.com/26524-thickbox_default/poncho-de-alpaca-el-boyero.jpg"
+                                    alt="Poncho de Alpaca">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Poncho de Alpaca</h2>
+                                <p class="descripcion">Poncho de alpaca suave y cálido, tejido artesanalmente con fibra hipoalergénica
+                                    y diseño versátil para cualquier ocasión.</p>
+                                <div class="precio">$36.500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.8 (18)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://arandu.com.ar/media/2020/06/2881M.jpg"
+                                    alt="Sobrero de Cuero Marron oscuro">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Sombreo de Cuero</h2>
+                                <p class="descripcion">Sombrero de cuero genuino, resistente y elegante, ideal para proteger
+                                    del sol con estilo rústico y tradicional.</p>
+                                <div class="precio">$12.500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.6 (28)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://almacencriollo.com.ar/wp-content/uploads/2024/09/14574644331350884994_800x800.jpg"
+                                    alt="Boina Bordos">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Boinas</h2>
+                                <p class="descripcion">Boina clásica de tela suave y resistente, perfecta para
+                                    peñas y salidas de campos.</p>
+                                <div class="precio">$5.300</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.1 (69)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://arandu.com.ar/media/2021/05/243C-8_web-scaled.jpg"
+                                    alt="Bombacha de Gaucho">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Bombachas de Gaucho</h2>
+                                <p class="descripcion">Bombacha de gaucho cómoda y resistente, confeccionada en tela tradicional
+                                    para un estilo auténtico y funcional.</p>
+                                <div class="precio">$9.300</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.7 (80)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://www.larodada.com/wp-content/uploads/2023/08/16880408811973759347_1500x1500.jpg"
+                                    alt="Alpargatas Negras">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Alpargatas</h2>
+                                <p class="descripcion">Alpargatas livianas y cómodas, con suela de esparto y
+                                    diseño clásico para uso casual y veraniego.</p>
+                                <div class="precio">$7.777</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 5.0 (100)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- Herramientas -->
+            <section class="articulo-publicados" id="Herramientas">
+                <h2>Herramientas</h2>
+                <div class="contenedor-articulos">
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://www.segutecnica.com/images/000000000000431997623carretilla-reforzada-compacta-con-rueda-neumatica-ps-16-polo-ccpp125-segutecnica---copia.png"
+                                    alt="Carretilla Verde">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Carretilla</h2>
+                                <p class="descripcion">Carretilla resistente con capacidad amplia y estructura reforzada,
+                                    ideal para transportar materiales en obras y jardines.</p>
+                                <div class="precio">$15.650</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.8 (25)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://www.hogarjardin.com.ar/wp-content/uploads/2020/06/pala-tramontina-45cm.jpg"
+                                    alt="Pala Redondo">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Pala Redonda</h2>
+                                <p class="descripcion">Pala redonda con hoja de acero reforzado y mango ergonómico,
+                                     ideal para cavar y trasladar tierra o materiales sueltos.</p>
+                                <div class="precio">$7.500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.1 (6)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://http2.mlstatic.com/D_NQ_NP_970739-MLU78568593807_082024-O.webp"
+                                    alt="Hacha de mano">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Hacha de mano</h2>
+                                <p class="descripcion">Hacha de mano con filo afilado y mango de madera,
+                                     ideal para cortar leña y trabajos de jardinería.</p>
+                                <div class="precio">$6.500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.3 (29)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://www.abrafersrl.com.ar/wp-content/uploads/993700.jpg"
+                                    alt="Machete Laminado">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Machete laminado</h2>
+                                <p class="descripcion">Machete laminado de alta durabilidad con filo resistente,
+                                    perfecto para trabajos agrícolas y de corte pesado.</p>
+                                <div class="precio">$6.300</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.2 (30)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://http2.mlstatic.com/D_NQ_NP_723180-MLA79808134571_102024-O.webp"
+                                    alt="Llave Francesa">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Llave Francesa</h2>
+                                <p class="descripcion">Llave francesa ajustable de acero resistente, ideal para apretar
+                                    y aflojar tuercas y tornillos con precisión.</p>
+                                <div class="precio">$9.900</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.6 (9)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- Mascotas -->
+            <section class="articulo-publicados" id="Mascotas">
+                <h2>Mascotas</h2>
+                <div class="contenedor-articulos">
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://mascoterias.com/4375-large_default/550066-rascador-dos-pisos-y-casa-premium-para-gatos-54-x-41-x-70-cm.jpg"
+                                    alt="Casa y Rascador para Gatos">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Casa y Rascador para gatos</h2>
+                                <p class="descripcion">Casa y rascador multifuncional para gatos, con diseño cómodo y
+                                    materiales resistentes que cuidan sus uñas y descanso.</p>
+                                <div class="precio">$26.800</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.8 (17)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://acdn-us.mitiendanube.com/stores/001/365/307/products/_2023-09-28-09-59-34_edit-org1-28276f62b98634598516959060684999-1024-1024.jpg"
+                                    alt="Collares para Perros">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Collares para Perros</h2>
+                                <p class="descripcion">Collar ajustable para pocho, fabricado con materiales
+                                    duraderos y cómodos para el uso del tole.</p>
+                                <div class="precio">$4.500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 5.0 (40)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://catycanar.vtexassets.com/arquivos/ids/157421/12261.jpg?v=637732974776100000"
+                                    alt="Correa ajustable">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Correa Ajustable</h2>
+                                <p class="descripcion">Correa ajustable resistente, diseñada para brindar comodidad y
+                                    control durante paseos con mascotas de todos los tamaños.</p>
+                                <div class="precio">$11.150</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.4 (70)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src="https://blog.mabeglobal.com/wp-content/uploads/2024/01/camas-para-gatos.jpg"
+                                    alt="Cama para Gatos">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Cama para Gatos</h2>
+                                <p class="descripcion">Cama para gatos suave y acolchonada, ideal para un descanso cómodo
+                                    y cálido en cualquier lugar.</p>
+                                <div class="precio">$10.500</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.7 (36)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="producto/producto-particular.html">
+                        <div class="tarjeta-producto">
+                            <div class="seccion-imagen">
+                                <img class="imagen-producto"
+                                    src=https://www.petmarket.com.ar/wp-content/uploads/2024/08/cepillo-DpWL._AC_.jpg"
+                                    alt="Cepillo de Vapor par Mascotas">
+                                <!-- Bandera de descuento -->
+                        
+                                <!-- Íconos superpuestos -->
+                                <div class="iconos-oferta">
+                                    <i class="fas fa-heart"></i> <!-- Ícono de corazón -->
+                                </div>
+                            </div>
+                            <div class="contenido">
+                                <h2 class="titulo">Cepillo de Vapor</h2>
+                                <p class="descripcion">Cepillo de vapor para mascotas que limpia y desinfecta el pelaje,
+                                    cuidando la piel y eliminando olores de forma suave.</p>
+                                <div class="precio">$6.600</div>
+                                <button class="boton">Agregar al carrito</button>
+                                <div class="detalles">
+                                    <span>★ 4.0 (23)</span>
+                                    <span>Envío gratis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="https://img.icons8.com/?size=100&id=119346&format=png&color=000000"
+                    alt="Logo de la empresa" />
+                <p>Catamarket – Donde lo nuestro se encuentra con vos</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Secciones</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="contacto-Soporte/formulario-contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-envelope"></i> contacto@tusitio.com</p>
+                <p><i class="fas fa-phone"></i> +54 11 1234 5678</p>
+                <div class="social-icons">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Catamarket. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

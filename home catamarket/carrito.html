@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="carrito.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <title>Carrito de Compras</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://img.icons8.com/?size=100&id=119346&format=png&color=000000" alt="Logo cactus" width="50px"
+          height="50px">
+      </a>
+    </div>
+
+    <div class="barra_busqueda">
+      <input type="text" placeholder=" Buscar producto o categoría"> <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <div class="icons">
+      <a href="#popupUsuario"><i class="fas fa-user"></i></a>
+      <i class="fas fa-cart-shopping"></i>
+    </div>
+
+    <!-- Popup / Modal -->
+    <div id="popupUsuario" class="modal-overlay">
+      <div class="modal-contenido">
+        <a href="#" class="cerrar-modal">&times;</a>
+        <h3>Opciones</h3>
+        <div class="botones-popup">
+          <a href="mi-perfil.html" class="btn-popup">Mi perfil</a>
+          <a href="login.html" class="btn-popup">Iniciar sesión</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenedor Sidebar y mi perfil -->
+  <div class="contenedor-sidebar-miperfil">
+    <!-- Contenido principal -->
+    <main id="main-miperfil">
+      <h1>Carrito de Compras</h1>
+
+      <div class="contenedor-carrito-compras">
+        <div class="contenedor-carrito">
+          <h2>Productos</h2>
+          <section class="contenedor-articulos">
+            <div class="tarjeta-producto">
+              <i class="fa-solid fa-trash tachito"></i> <!-- Tachito de basura -->
+              <div class="seccion-imagen">
+                <img class="imagen-producto"
+                  src="https://images.pexels.com/photos/1138560/pexels-photo-1138560.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Pantalón de jean azul ">
+                <!-- Bandera de descuento -->
+                <div class="bandera-descuento oferta-25">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+                <!-- Íconos superpuestos -->
+                <div class="iconos-oferta">
+                  <i class="fas fa-tags"></i></i> <!-- Ícono de cupón -->
+                </div>
+              </div>
+              <div class="contenido">
+                <h2 class="titulo">Jeans Azul</h2>
+                <p class="descripcion">Jeans de corte recto y tiro medio,
+                  confeccionados en denim elástico para mayor comodidad y estilo diario.
+                </p>
+                <div class="precio">$5.500</div>
+                <div class="contenedor-cantidad">
+                  <label for="cantidad-unidades" class="label-cantidad-unidades">Cantidad</label>
+                  <select name="cantidad-unidades" id="cantidad-unidades" required>
+                    <option value="1" selected>1 u.</option>
+                    <option value="2">2 u.</option>
+                    <option value="3">3 u.</option>
+                    <option value="4">4 u.</option>
+                    <option value="5">5 u.</option>
+                    <option value="6">6 u.</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="tarjeta-producto">
+              <i class="fa-solid fa-trash tachito"></i> <!-- Tachito de basura -->
+              <div class="seccion-imagen">
+                <img class="imagen-producto"
+                  src="https://images.fravega.com/f300/8d1883fb110c245a80570f5188460c0b.jpg.webp"
+                  alt="Plancha de Pelo GAMA">
+                <!-- Íconos superpuestos -->
+                <div class="iconos-oferta">
+                  <i class="fas fa-tags"></i></i> <!-- Ícono de cupón -->
+                </div>
+              </div>
+              <div class="contenido">
+                <h2 class="titulo">Plancha de Pelo GAMA</h2>
+                <p class="descripcion">Plancha de pelo con placas de cerámica y control de temperatura,
+                  ideal para un alisado suave, brillante y sin frizz.</p>
+                <div class="precio">$22.200</div>
+                <div class="contenedor-cantidad">
+                  <label for="cantidad-unidades" class="label-cantidad-unidades">Cantidad</label>
+                  <select name="cantidad-unidades" id="cantidad-unidades" required>
+                    <option value="1" selected>1 u.</option>
+                    <option value="2">2 u.</option>
+                    <option value="3">3 u.</option>
+                    <option value="4">4 u.</option>
+                    <option value="5">5 u.</option>
+                    <option value="6">6 u.</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="contenedor-info-compra">
+          <h2>Información de la Compra</h2>
+          <section class="contenedor-info-productos">
+            <div class="contenedor-info">
+              <p>Productos (3)</p>
+              <p>$100.000</p>
+            </div>
+            <div class="contenedor-info">
+              <a href="">Envío a Calle Siempre Viva 742, Springfield, Argentina</a>
+            </div>
+
+            <div class="contenedor-info">
+              <a href="">Ingresar un cupón de descuento</a>
+            </div>
+            <div class="contenedor-info">
+              <p>Total</p>
+              <p>$100.000</p>
+            </div>
+            <a href="metodo-pago.html"><button class="boton">Continuar compra</button></a>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="https://img.icons8.com/?size=100&id=119346&format=png&color=000000" alt="Logo de la empresa" />
+        <p>Catamarket – Donde lo nuestro se encuentra con vos</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p><i class="fas fa-envelope"></i> contacto@tusitio.com</p>
+        <p><i class="fas fa-phone"></i> +54 11 1234 5678</p>
+        <div class="social-icons">
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Catamarket. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

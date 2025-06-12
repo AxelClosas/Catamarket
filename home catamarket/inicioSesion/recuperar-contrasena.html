@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar constraseña</title>
+    <link rel="stylesheet" href="estilos-cambio-contrasena.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <main class="contenedor-recuperacion">
+        <section id="recuperar-contrasena" class="seccion-recuperacion">
+            <h1 class="titulo-seccion">Recuperar contraseña</h1>
+            
+            <p class="descripcion-seccion">Ingresa tu email para recibir un enlace de recuperación.</p>
+            
+            <form id="formulario-recuperacion" class="formulario" action="nueva-contrasena.html" method="GET">
+                <div class="form-group">
+                    <label for="usuario-email">Email:</label>
+                    <input 
+                        type="email" 
+                        id="usuario-email" 
+                        name="email" 
+                        placeholder="ejemplo@correo.com" 
+                        required
+                        aria-describedby="email-help"
+                    >
+                    <small id="email-help" class="texto-ayuda">Revisa tu bandeja de entrada o spam después de enviar.</small>
+                </div>
+                
+                <div class="botones-formulario">
+                    <button type="submit" class="boton boton-primario" >Enviar enlace</button>
+                    
+                    <button type="reset" class="boton boton-secundario">Limpiar</button>
+                </div>
+            </form>
+        </section> 
+    </main>
+</body>
+</html>

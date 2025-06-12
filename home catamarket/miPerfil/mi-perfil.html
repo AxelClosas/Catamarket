@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="mi_perfil.css">
+    <title>Mi Perfil - Marketplace</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="../index.html">
+            <div class="logo">
+                <img src="https://img.icons8.com/?size=100&id=119346&format=png&color=000000" alt="Logo cactus"
+                    width="50px" height="50px">
+            </div>
+        </a>
+
+        <div class="barra_busqueda">
+            <input type="text" placeholder=" Buscar producto o categoría"> <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fas fa-user"></i></a>
+            <i class="fas fa-cart-shopping"></i>
+        </div>
+    </header>
+
+    <!-- Contenedor Sidebar + Main -->
+    <input type="checkbox" id="sidebar-toggle" style="display: none;">
+    <label for="sidebar-toggle" class="hamburger">☰</label>
+    <div class="contenedor-sidebar-miperfil">
+        <!-- Sidebar-->
+        <!-- Sidebar modificar no me gusta-->
+        <aside class="aside-categorias">
+            <div class="aside-contenedor-mi-cuenta">
+                <label for="sidebar-toggle" class="cerra-sidebar">✕</label>
+                <div class="contenedor-sidebar-miperfil2">
+                    <h3>Mi Cuenta</h3>
+
+                    <input type="radio" id="rol-usuario" name="rol" checked>
+                    <label for="rol-usuario" class="rol-btn"><i class="fas fa-user"></i> Modo Usuario</label>
+
+                    <input type="radio" id="rol-vendedor" name="rol">
+                    <label for="rol-vendedor" class="rol-btn"><i class="fas fa-store"></i> Modo Vendedor</label>
+
+                    <ul>
+                        <!-- Usuario -->
+                        <li><a href="#"><i class="fas fa-cog"></i> Configuración</a></li>
+                        <li class="menu-usuario">
+                            <a href="#Mis-compras"><i class="fas fa-shopping-bag"></i> Mis Compras</a>
+                        </li>
+                        <li class="menu-usuario">
+                            <a href="#favoritos"><i class="fas fa-heart"></i> Favoritos</a>
+                        </li>
+                        <li class="menu-usuario">
+                            <a href="#resenas-realizadas"><i class="fas fa-shopping-bag"></i> resenas-realizadas</a>
+                        </li>
+                        <li class="menu-usuario">
+                            <a href="#mensajes-recibidos"><i class="fas fa-heart"></i> mensajes-recibidos</a>
+                        </li>
+                        <li class="menu-usuario">
+                            <a href="#devoluciones"><i class="fas fa-heart"></i> devoluciones</a>
+                        </li>
+                        <li class="menu-usuario">
+                            <a href="#cupones"><i class="fas fa-heart"></i> cupones</a>
+                        </li>
+                        <li class="menu-usuario">
+                            <a href="#direccion"><i class="fas fa-heart"></i> direccion</a>
+                        </li>
+
+                        <!-- Vendedor -->
+                        <li class="menu-vendedor">
+                            <a href="#prodcutos-publicados"><i class="fas fa-box-open"></i> prodcutos-publicados</a>
+                        </li>
+                        <li class="menu-vendedor">
+                            <a href="#ventas-recientes"><i class="fas fa-chart-line"></i> ventas-recientes</a>
+                        </li>
+                        <li class="menu-vendedor">
+                            <a href="#estadisticas"><i class="fas fa-box-open"></i> estadisticas</a>
+                        </li>
+                        <li class="menu-vendedor">
+                            <a href="#resena-recibidas"><i class="fas fa-chart-line"></i> resena-recibidas</a>
+                        </li>
+                        <li class="menu-vendedor">
+                            <a href="#inventario"><i class="fas fa-box-open"></i> inventario</a>
+                        </li>
+                        <li class="menu-vendedor">
+                            <a href="#mensajes-vendedor"><i class="fas fa-chart-line"></i> mensajes-vendedor</a>
+                        </li>
+                        <li class="menu-vendedor">
+                            <a href="#configuracion-tienda"><i class="fas fa-box-open"></i> configuracion-tienda</a>
+                        </li>
+                    </ul>
+                </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main id="main-miperfil">
+            <!-- Sección Perfil -->
+            <section class="info-personal">
+                <div class="contenido-personal">
+                    <img class="img-perfil" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg"
+                        alt="Foto de perfil">
+                    <div class="datos-perfil">
+                        <h2>Sofía Ramírez</h2>
+                        <div class="rating">
+                            <div class="estrellas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span>4.8 (120 reseñas)</span>
+                        </div>
+                        <p class="ubicacion"><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</p>
+                    </div>
+                </div>
+                <!-- Sección Redes -->
+                <div class="redes-sociales">
+                    <a href="#" class="red-social WhatsApp" title="WhatsApp">
+                        <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=000000" alt="WhatsApp">
+                    </a>
+                    <a href="#" class="red-social Instagram" title="Instagram">
+                        <img src="https://img.icons8.com/?size=100&id=32309&format=png&color=000000" alt="Instagram">
+                    </a>
+                    <a href="#" class="red-social Facebook" title="Facebook">
+                        <img src="https://img.icons8.com/?size=100&id=8818&format=png&color=000000" alt="Facebook">
+                    </a>
+                    <a href="#" class="red-social Email" title="Email">
+                        <img src="https://img.icons8.com/?size=100&id=ZE7CF2CQ0DcJ&format=png&color=000000" alt="Email">
+                    </a>
+                    <a href="#popupUsuario" class="red-social" title="Vincular redes">
+                        <img src="https://img.icons8.com/?size=100&id=qgyJAKd442ky&format=png&color=000000"
+                            alt="editar-redes">
+                    </a>
+                    <!-- Popup / Modal cambio de redes sociales -->
+                    <div id="popupUsuario" class="modal-overlay">
+                        <div class="modal-contenido">
+                            <a href="#" class="cerrar-modal">&times;</a>
+                            <div class="seccion-recuperacion">
+                                <h3 class="titulo-seccion">Vincular redes sociales</h3>
+                                <p class="descripcion-seccion">Conecta tus redes sociales para mejorar tu experiencia.
+                                </p>
+                                <form action="" class="formulario">
+                                    <div class="form-group">
+                                        <label for="WhatsApp">WhatsApp: </label>
+                                        <input type="text" id="WhatsApp" placeholder="https://wa.me/tu-numero">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="instagram">Instagram: </label>
+                                        <input type="text" id="instagram"
+                                            placeholder="https://www.instagram.com/tu-perfil">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="facebook">Facebook: </label>
+                                        <input type="text" id="facebook"
+                                            placeholder="https://www.facebook.com/tu-perfil">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email: </label>
+                                        <input type="text" id="email" placeholder="alguien@gmail.com">
+                                    </div>
+                                    <div class="botones-formulario">
+                                        <button type="button" class="boton boton-primario"
+                                            onclick="location.href='mi-perfil.html'">Guardar</button>
+                                        <button type="button" class="boton boton-primario2"
+                                            onclick="location.href='mi-perfil.html'">Cancelar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sistema de Tabs "botones para cambiar de informacion"-->
+            <div class="tabs-system">
+                <!-- Mover inputs al mismo nivel que .tabs-content para que funcione, sino no funciona -->
+                <!-- inputs tipo Radio "circulitos clickeables"-->
+                <input type="radio" name="tabs-system" id="tab-usuario" checked>
+                <input type="radio" name="tabs-system" id="tab-vendedor">
+
+                <!-- botones accionables de usuario y vendedor-->
+                <div class="tabs-header">
+                    <label for="tab-usuario" class="tab-btn">
+                        <i class="fas fa-user"></i> Como Usuario
+                    </label>
+                    <label for="tab-vendedor" class="tab-btn">
+                        <i class="fas fa-store"></i> Como Vendedor
+                    </label>
+                    <div class="tab-indicator"></div>
+                </div>
+
+                <!-- Contenido de usuario o vendedor segun el input clickeado del apartado superior "tabs-header"-->
+                <div class="tabs-content">
+                    <!--Contenido de Usuario-->
+                    <div class="tab-pane" id="content-usuario">
+
+                        <!--Historial de Compras-->
+                        <div class="historial-compra" id="Mis-compras">
+                            <h3 class="tab-title">Historial de Compras</h3>
+                            <div class="productos-grid">
+                                <div class="producto-card">
+                                    <div class="producto-imagen">
+                                        <img src="https://images.pexels.com/photos/11671964/pexels-photo-11671964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt="Camiseta basica">
+                                    </div>
+                                    <div class="producto-info">
+                                        <h4>Camiseta Basica</h4>
+                                        <p class="producto-precio">$5,900 ARS</p>
+                                        <p class="producto-detalle">Fecha: 01/06/2025</p>
+                                        <p class="producto-detalle">Estado: Entregado</p>
+                                        <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="producto-card">
+                                    <div class="producto-imagen">
+                                        <img src="https://img-global.cpcdn.com/recipes/b9d74d0196b91997/300x220cq70/nueces-confitadas-foto-principal.jpg"
+                                            alt="nueces confitadas">
+                                    </div>
+                                    <div class="producto-info">
+                                        <h4>Nueces Confitadas</h4>
+                                        <p class="producto-precio">$6,800 ARS</p>
+                                        <p class="producto-detalle">Fecha: 29/05/2025</p>
+                                        <p class="producto-detalle">Estado: Entregado</p>
+                                        <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="producto-card">
+                                    <div class="producto-imagen">
+                                        <img src="https://http2.mlstatic.com/D_Q_NP_2X_848729-MLA82050869233_012025-V.webp"
+                                            alt=" Poncho de Vicuña">
+                                    </div>
+                                    <div class="producto-info">
+                                        <h4> Poncho de Vicuña</h4>
+                                        <p class="producto-precio">$8,500 ARS</p>
+                                        <p class="producto-detalle">Fecha: 2/06/2025</p>
+                                        <p class="producto-detalle">Estado: Entregado</p>
+                                        <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="producto-card">
+                                    <div class="producto-imagen">
+                                        <img src="https://media.istockphoto.com/id/1147756169/es/vector/botella-de-aceite-de-oliva-con-etiqueta-mockup.jpg?s=612x612&w=0&k=20&c=hhND3Uh6s5utm_e1XaXDmLxdIpN7t9zUSIXeJKqQq14="
+                                            alt="Aceite de Oliva">
+                                    </div>
+                                    <div class="producto-info">
+                                        <h4>Aceite de Oliva </h4>
+                                        <p class="producto-precio">$7,900 ARS</p>
+                                        <p class="producto-detalle">Fecha: 10/06/2025</p>
+                                        <p class="producto-detalle">Estado: En camino</p>
+                                        <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="producto-card">
+                                    <div class="producto-imagen">
+                                        <img src="https://http2.mlstatic.com/D_Q_NP_2X_697786-MLA71782439522_092023-V.webp"
+                                            alt="Vino Malbec">
+                                    </div>
+                                    <div class="producto-info">
+                                        <h4>Vino Malbec</h4>
+                                        <p class="producto-precio">$15,100 ARS</p>
+                                        <p class="producto-detalle">Fecha: 28/05/2025</p>
+                                        <p class="producto-detalle">Estado: En camino</p>
+                                        <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Favoritos-->
+                        <div class="favoritos" id="favoritos">
+                            <h3 class="tab-title">Favoritos</h3>
+                            <div class="favoritos-grid">
+                                <div class="favorito-card">
+                                    <div class="favorito-imagen">
+                                        <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            alt="Zapatillas deportivas">
+                                    </div>
+                                    <div class="favorito-info">
+                                        <h4>Zapatillas deportivas</h4>
+                                        <p class="favorito-precio">$25,000 ARS</p>
+                                        <button class="favorito-action"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="favorito-card">
+                                    <div class="favorito-imagen">
+                                        <img src="https://m.media-amazon.com/images/I/71WABICzckL.jpg"
+                                            alt="miel de abeja">
+                                    </div>
+                                    <div class="favorito-info">
+                                        <h4>miel de abeja</h4>
+                                        <p class="favorito-precio">$9,500 ARS</p>
+                                        <button class="favorito-action"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="favorito-card">
+                                    <div class="favorito-imagen">
+                                        <img src="https://http2.mlstatic.com/D_NQ_NP_601119-MLA52406507245_112022-O.webp"
+                                            alt=" Chalina de Lana">
+                                    </div>
+                                    <div class="favorito-info">
+                                        <h4>Chalina de Lana</h4>
+                                        <p class="favorito-precio">$11,000 ARS</p>
+                                        <button class="favorito-action"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="favorito-card">
+                                    <div class="favorito-imagen">
+                                        <img src="https://http2.mlstatic.com/D_Q_NP_2X_901794-MLA79428802280_092024-V.webp"
+                                            alt="alfajores">
+                                    </div>
+                                    <div class="favorito-info">
+                                        <h4>Alfajores "La quinta" x12</h4>
+                                        <p class="favorito-precio">$8,600 ARS</p>
+                                        <button class="favorito-action"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="favorito-card">
+                                    <div class="favorito-imagen">
+                                        <img src="https://pisandofuerte.es/47569-home_default/alpargatas-lona-hombre-havaianas-origine-iv-varios-4147955.jpg"
+                                            alt="Alpargatas de lona">
+                                    </div>
+                                    <div class="favorito-info">
+                                        <h4>Alpargatas de lona</h4>
+                                        <p class="favorito-precio">$10,000 ARS</p>
+                                        <button class="favorito-action"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="favorito-card">
+                                    <div class="favorito-imagen">
+                                        <img src="https://http2.mlstatic.com/D_NQ_NP_841269-MLA50622868607_072022-V.webp"
+                                            alt="Dulce de membrillo">
+                                    </div>
+                                    <div class="favorito-info">
+                                        <h4>Dulce de membrillo</h4>
+                                        <p class="favorito-precio">$5,900 ARS</p>
+                                        <button class="favorito-action"><i class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--Reseñas Realizadas-->
+                        <div class="resenas-Realizadas" id="resenas-realizadas">
+                            <h3 class="tab-title">Reseñas Realizadas</h3>
+                            <div class="reseñas-list">
+                                <div class="reseña-item">
+                                    <p class="reseña-producto">Camiseta Basica</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="reseña-comentario">"Muy buena calidad, entrega rápida."</p>
+                                    <p class="reseña-fecha">01/06/2025</p>
+                                </div>
+
+                                <div class="reseña-item">
+                                    <p class="reseña-producto">Nueces confitadas</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="reseña-comentario">"Muy buena calidad, entrega rápida."</p>
+                                    <p class="reseña-fecha">01/06/2025</p>
+                                </div>
+
+                                <div class="reseña-item">
+                                    <p class="reseña-producto">Jean slim fit hombre</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="reseña-comentario">"Muy buena calidad, entrega rápida."</p>
+                                    <p class="reseña-fecha">01/06/2025</p>
+                                </div>
+
+                                <div class="reseña-item">
+                                    <p class="reseña-producto">Jean slim fit hombre</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="reseña-comentario">"Muy buena calidad, entrega rápida."</p>
+                                    <p class="reseña-fecha">01/06/2025</p>
+                                </div>
+
+                                <div class="reseña-item">
+                                    <p class="reseña-producto">Jean slim fit hombre</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="reseña-comentario">"Muy buena calidad, entrega rápida."</p>
+                                    <p class="reseña-fecha">01/06/2025</p>
+                                </div>
+                            </div>
+                            <div class="section-footer">
+                                <button class="ver-mas">Ver más</button>
+                            </div>
+                        </div>
+
+                        <!--Mensajes-->
+                        <div class="mensajes-realizados" id="mensajes-recibidos">
+                            <h3 class="tab-title">Mensajes</h3>
+                            <div class="mensajes-list">
+                                <div class="mensaje-item">
+                                    <p class="mensaje-vendedor">Vendedor: Tienda XYZ</p>
+                                    <p class="mensaje-contenido">Gracias por tu compra. ¿Todo OK con el envío?</p>
+                                    <p class="mensaje-fecha">02/06/2025</p>
+                                    <button class="mensaje-responder">Responder</button>
+                                </div>
+
+                                <div class="mensaje-item">
+                                    <p class="mensaje-vendedor">Vendedor: Tienda XYZ</p>
+                                    <p class="mensaje-contenido">Gracias por tu compra. ¿Todo OK con el envío?</p>
+                                    <p class="mensaje-fecha">02/06/2025</p>
+                                    <button class="mensaje-responder">Responder</button>
+                                </div>
+
+                                <div class="mensaje-item">
+                                    <p class="mensaje-vendedor">Vendedor: Tienda XYZ</p>
+                                    <p class="mensaje-contenido">Gracias por tu compra. ¿Todo OK con el envío?</p>
+                                    <p class="mensaje-fecha">02/06/2025</p>
+                                    <button class="mensaje-responder">Responder</button>
+                                </div>
+
+                                <div class="mensaje-item">
+                                    <p class="mensaje-vendedor">Vendedor: Tienda XYZ</p>
+                                    <p class="mensaje-contenido">Gracias por tu compra. ¿Todo OK con el envío?</p>
+                                    <p class="mensaje-fecha">02/06/2025</p>
+                                    <button class="mensaje-responder">Responder</button>
+                                </div>
+                            </div>
+                            <div class="section-footer">
+                                <button class="ver-mas">Ver más</button>
+                            </div>
+                        </div>
+
+                        <!--Devoluciones/Peticiones-->
+                        <div class="devoluciones" id="devoluciones">
+                            <h3 class="tab-title">Devoluciones/Peticiones</h3>
+                            <div class="empty-state">
+                                <i class="fas fa-undo"></i>
+                                <p>No hay devoluciones ni peticiones pendientes</p>
+                            </div>
+                        </div>
+
+                        <!--Cupones/Descuentos-->
+                        <div class="cupones" id="cupones">
+                            <h3 class="tab-title">Cupones/Descuentos</h3>
+                            <div class="cupones-list">
+                                <div class="cupon-item">
+                                    <p class="cupon-codigo">DESC10</p>
+                                    <p class="cupon-detalle">10% de descuento en toda la tienda</p>
+                                    <p class="cupon-expira">Válido hasta: 30/06/2025</p>
+                                </div>
+
+                                <div class="cupon-item">
+                                    <p class="cupon-codigo">DESC10</p>
+                                    <p class="cupon-detalle">10% de descuento en toda la tienda</p>
+                                    <p class="cupon-expira">Válido hasta: 30/06/2025</p>
+                                </div>
+
+                                <div class="cupon-item">
+                                    <p class="cupon-codigo">DESC10</p>
+                                    <p class="cupon-detalle">10% de descuento en toda la tienda</p>
+                                    <p class="cupon-expira">Válido hasta: 30/06/2025</p>
+                                </div>
+
+                                <div class="cupon-item">
+                                    <p class="cupon-codigo">DESC10</p>
+                                    <p class="cupon-detalle">10% de descuento en toda la tienda</p>
+                                    <p class="cupon-expira">Válido hasta: 30/06/2025</p>
+                                </div>
+
+                                <div class="cupon-item">
+                                    <p class="cupon-codigo">DESC10</p>
+                                    <p class="cupon-detalle">10% de descuento en toda la tienda</p>
+                                    <p class="cupon-expira">Válido hasta: 30/06/2025</p>
+                                </div>
+                            </div>
+                            <div class="section-footer">
+                                <button class="ver-mas">Ver más</button>
+                            </div>
+                        </div>
+
+                        <!--Direcciones Guardadas-->
+                        <div class="direccion" id="direccion">
+                            <h3 class="tab-title">Direcciones Guardadas</h3>
+                            <div class="direcciones-list">
+                                <div class="direccion-item">
+                                    <p class="direccion-nombre">Casa</p>
+                                    <p class="direccion-detalle">Av. Siempre Viva 123, Buenos Aires</p>
+                                    <button class="direccion-editar"><i class="fas fa-edit"></i> Editar</button>
+                                </div>
+                                <div class="direccion-item">
+                                    <p class="direccion-nombre">Trabajo</p>
+                                    <p class="direccion-detalle">Calle Falsa 456, Buenos Aires</p>
+                                    <button class="direccion-editar"><i class="fas fa-edit"></i> Editar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Contenido de Vendedor-->
+                    <div class="tab-pane" id="content-vendedor">
+                        <!--Productos Publicados-->
+                        <div class="producto" id="prodcutos-publicados">
+                            <h3 class="tab-title">Productos Publicados</h3>
+                            <div class="productos-grid">
+                                <article class="producto-card">
+                                    <div class="producto-imagen">
+                                        <img src="https://images.pexels.com/photos/1138560/pexels-photo-1138560.jpeg"
+                                            alt="Pantalón de jean">
+                                    </div>
+                                    <div class="producto-info">
+                                        <h4>Jean slim fit Mujer</h4>
+                                        <p class="producto-precio">$18,900 ARS</p>
+                                        <p class="producto-detalle">Stock: 10</p>
+                                        <p class="producto-detalle">Estado: Activo</p>
+                                        <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                    </div>
+                                </article>
+
+                                <article class="producto-card">
+                                    <div class="producto-imagen">
+                                        <img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/7dc1f26d2d2e4824a71ec6b1a7018d33_9366/Zapatillas_CourtJam_Control_3_para_Tenis_sobre_Arcilla_Blanco_JH5137_01_00_standard.jpg"
+                                            alt="Zapatillas deportivas">
+                                    </div>
+                                    <div class="producto-info">
+                                        <h4>Zapatillas deportivas Adidas</h4>
+                                        <p class="producto-precio">$220,000 ARS</p>
+                                        <p class="producto-detalle">Stock: 5</p>
+                                        <p class="producto-detalle">Estado: Pausado</p>
+                                        <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                    </div>
+                                </article>
+
+                                <article class="producto-card">
+                                    <div class="producto-imagen">
+                                        <img src="https://elboyero.com/26524-thickbox_default/poncho-de-alpaca-el-boyero.jpg"
+                                            alt="Poncho">
+                                    </div>
+                                    <div class="producto-info">
+                                        <h4>Poncho de Alpaca</h4>
+                                        <p class="producto-precio">$60,900 ARS</p>
+                                        <p class="producto-detalle">Stock: 10</p>
+                                        <p class="producto-detalle">Estado: Activo</p>
+                                        <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                    </div>
+                                </article>
+
+                                <article class="producto-card">
+                                    <div class="producto-imagen">
+                                        <img src="https://www.hola.com/horizon/landscape/c6fe700ec51e-dulce-membrillo-adobe-t.jpg"
+                                            alt="Dulce de Membrillo">
+                                    </div>
+                                    <div class="producto-info">
+                                        <h4>Dulce de Membrillo Cacero</h4>
+                                        <p class="producto-precio">$25,000 ARS</p>
+                                        <p class="producto-detalle">Stock: 5</p>
+                                        <p class="producto-detalle">Estado: Pausado</p>
+                                        <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                    </div>
+                                </article>
+
+                                <article class="producto-card">
+                                    <div class="producto-imagen">
+                                        <img src="https://acdn-us.mitiendanube.com/stores/001/404/983/products/bordo04-f04c970710f9a7425617054914156529-1024-1024.png"
+                                            alt="alpargata">
+                                    </div>
+                                    <div class="producto-info">
+                                        <h4>Jean slim fit hombre</h4>
+                                        <p class="producto-precio">$47,900 ARS</p>
+                                        <p class="producto-detalle">Stock: 10</p>
+                                        <p class="producto-detalle">Estado: Activo</p>
+                                        <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                    </div>
+                                </article>
+
+                                <article class="producto-card">
+                                    <div class="producto-imagen">
+                                        <img src="https://woker.vtexassets.com/arquivos/ids/476476-800-800?v=638562978247830000&width=800&height=800&aspect=true"
+                                            alt="Buzo">
+                                    </div>
+                                    <div class="producto-info">
+                                        <h4>Buzo Adidas</h4>
+                                        <p class="producto-precio">$90,000 ARS</p>
+                                        <p class="producto-detalle">Stock: 5</p>
+                                        <p class="producto-detalle">Estado: Pausado</p>
+                                        <button class="producto-action"><i class="fas fa-ellipsis-v"></i></button>
+                                    </div>
+                                </article>
+
+
+                            </div>
+                        </div>
+
+                        <!--Ventas Recientes-->
+                        <div class="ventas-recientes" id="ventas-recientes">
+                            <h3 class="tab-title">Ventas Recientes</h3>
+                            <div class="ventas-list">
+                                <div class="venta-item">
+                                    <p class="venta-producto">Jean slim fit Mujer</p>
+                                    <p class="venta-detalle">Comprador: Juana Pérez</p>
+                                    <p class="venta-detalle">Fecha: 03/06/2025</p>
+                                    <p class="venta-detalle">Estado: Enviado</p>
+                                    <button class="venta-action">Ver Detalles</button>
+                                </div>
+
+                                <div class="venta-item">
+                                    <p class="venta-producto">Poncho de Alpaca</p>
+                                    <p class="venta-detalle">Comprador: Ana Gómez</p>
+                                    <p class="venta-detalle">Fecha: 01/06/2025</p>
+                                    <p class="venta-detalle">Estado: Entregado</p>
+                                    <button class="venta-action">Ver Detalles</button>
+                                </div>
+
+                                <div class="venta-item">
+                                    <p class="venta-producto">Alpargatas</p>
+                                    <p class="venta-detalle">Comprador: Lucas Pérez</p>
+                                    <p class="venta-detalle">Fecha: 03/06/2025</p>
+                                    <p class="venta-detalle">Estado: Enviado</p>
+                                    <button class="venta-action">Ver Detalles</button>
+                                </div>
+
+                                <div class="venta-item">
+                                    <p class="venta-producto">Buzo Adidas</p>
+                                    <p class="venta-detalle">Comprador: Daniel Gómez</p>
+                                    <p class="venta-detalle">Fecha: 01/06/2025</p>
+                                    <p class="venta-detalle">Estado: Entregado</p>
+                                    <button class="venta-action">Ver Detalles</button>
+                                </div>
+
+                                <div class="venta-item">
+                                    <p class="venta-producto">Dulce de Membrillo</p>
+                                    <p class="venta-detalle">Comprador: Juan Gonzales</p>
+                                    <p class="venta-detalle">Fecha: 03/06/2025</p>
+                                    <p class="venta-detalle">Estado: Enviado</p>
+                                    <button class="venta-action">Ver Detalles</button>
+                                </div>
+
+                                <div class="venta-item">
+                                    <p class="venta-producto">Zapatillas Adidas</p>
+                                    <p class="venta-detalle">Comprador: Jose Ramos</p>
+                                    <p class="venta-detalle">Fecha: 01/06/2025</p>
+                                    <p class="venta-detalle">Estado: Entregado</p>
+                                    <button class="venta-action">Ver Detalles</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Estadísticas de Ventas-->
+                        <div class="Estadisticas-graficas" id="estadisticas">
+                            <h3 class="tab-title">Estadísticas de Ventas</h3>
+                            <div class="estadisticas-grid">
+                                <div class="estadistica-item">
+                                    <p class="estadistica-titulo">Ventas Totales</p>
+                                    <p class="estadistica-valor">45</p>
+                                </div>
+                                <div class="estadistica-item">
+                                    <p class="estadistica-titulo">Ingresos</p>
+                                    <p class="estadistica-valor">$125,000 ARS</p>
+                                </div>
+                                <div class="estadistica-item">
+                                    <p class="estadistica-titulo">Producto Más Vendido</p>
+                                    <p class="estadistica-valor">Jean slim fit hombre</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Reseñas Recibidas-->
+                        <div class="resena-recibidas" id="resena-recibidas">
+                            <h3 class="tab-title">Reseñas Recibidas</h3>
+                            <div class="reseñas-list">
+                                <div class="reseña-item">
+                                    <p class="reseña-producto">Jean slim fit Mujer</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="reseña-comentario">"Excelente producto, muy cómodo."</p>
+                                    <p class="reseña-fecha">02/06/2025</p>
+                                </div>
+
+                                <div class="reseña-item">
+                                    <p class="reseña-producto">Poncho</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="reseña-comentario">"Excelente producto, muy cómodo."</p>
+                                    <p class="reseña-fecha">02/06/2025</p>
+                                </div>
+
+                                <div class="reseña-item">
+                                    <p class="reseña-producto">Alpargatas</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="reseña-comentario">"Excelente producto, muy cómodas."</p>
+                                    <p class="reseña-fecha">02/06/2025</p>
+                                </div>
+
+                                <div class="reseña-item">
+                                    <p class="reseña-producto">Dulce de Membrillo</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="reseña-comentario">"Excelente producto, muy rico."</p>
+                                    <p class="reseña-fecha">02/06/2025</p>
+                                </div>
+
+                                <div class="reseña-item">
+                                    <p class="reseña-producto">Buzo Adidas</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="reseña-comentario">"Excelente producto, muy cómodo."</p>
+                                    <p class="reseña-fecha">02/06/2025</p>
+                                </div>
+                            </div>
+                            <div class="section-footer">
+                                <button class="ver-mas">Ver más</button>
+                            </div>
+                        </div>
+
+                        <!--Inventario-->
+                        <div class="inventario" id="inventario">
+                            <h3 class="tab-title">Inventario</h3>
+                            <div class="inventario-list">
+                                <div class="inventario-item">
+                                    <p class="inventario-producto">Jean slim fit Mujer</p>
+                                    <p class="inventario-detalle">Stock actual: 10</p>
+                                    <button class="inventario-actualizar">Actualizar Stock</button>
+                                </div>
+
+                                <div class="inventario-item">
+                                    <p class="inventario-producto">Zapatillas Adidas</p>
+                                    <p class="inventario-detalle">Stock actual: 5</p>
+                                    <button class="inventario-actualizar">Actualizar Stock</button>
+                                </div>
+
+                                <div class="inventario-item">
+                                    <p class="inventario-producto">Poncho de Alpaca</p>
+                                    <p class="inventario-detalle">Stock actual: 4</p>
+                                    <button class="inventario-actualizar">Actualizar Stock</button>
+                                </div>
+
+                                <div class="inventario-item">
+                                    <p class="inventario-producto">Dulce de Membrillo</p>
+                                    <p class="inventario-detalle">Stock actual: 8</p>
+                                    <button class="inventario-actualizar">Actualizar Stock</button>
+                                </div>
+
+                                <div class="inventario-item">
+                                    <p class="inventario-producto">Alpargatas</p>
+                                    <p class="inventario-detalle">Stock actual: 7</p>
+                                    <button class="inventario-actualizar">Actualizar Stock</button>
+                                </div>
+
+                                <div class="inventario-item">
+                                    <p class="inventario-producto">Buzo Adidas</p>
+                                    <p class="inventario-detalle">Stock actual: 3</p>
+                                    <button class="inventario-actualizar">Actualizar Stock</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Mensajes-->
+                        <div class="mensajes-recibidos" id="mensajes-vendedor">
+                            <h3 class="tab-title">Mensajes</h3>
+                            <div class="mensajes-list">
+                                <div class="mensaje-item">
+                                    <p class="mensaje-comprador">Comprador: Juan Pérez</p>
+                                    <p class="mensaje-contenido">¿Tienen este jean en talla 42?</p>
+                                    <p class="mensaje-fecha">03/06/2025</p>
+                                    <button class="mensaje-responder">Responder</button>
+                                </div>
+
+                                <div class="mensaje-item">
+                                    <p class="mensaje-comprador">Comprador: Juan Pérez</p>
+                                    <p class="mensaje-contenido">¿Tienen este jean en talla 42?</p>
+                                    <p class="mensaje-fecha">03/06/2025</p>
+                                    <button class="mensaje-responder">Responder</button>
+                                </div>
+
+                                <div class="mensaje-item">
+                                    <p class="mensaje-comprador">Comprador: Juan Pérez</p>
+                                    <p class="mensaje-contenido">¿Tienen este jean en talla 42?</p>
+                                    <p class="mensaje-fecha">03/06/2025</p>
+                                    <button class="mensaje-responder">Responder</button>
+                                </div>
+
+                                <div class="mensaje-item">
+                                    <p class="mensaje-comprador">Comprador: Juan Pérez</p>
+                                    <p class="mensaje-contenido">¿Tienen este jean en talla 42?</p>
+                                    <p class="mensaje-fecha">03/06/2025</p>
+                                    <button class="mensaje-responder">Responder</button>
+                                </div>
+
+                                <div class="mensaje-item">
+                                    <p class="mensaje-comprador">Comprador: Juan Pérez</p>
+                                    <p class="mensaje-contenido">¿Tienen este jean en talla 42?</p>
+                                    <p class="mensaje-fecha">03/06/2025</p>
+                                    <button class="mensaje-responder">Responder</button>
+                                </div>
+                            </div>
+                            <div class="section-footer">
+                                <button class="ver-mas">Ver más</button>
+                            </div>
+                        </div>
+
+                        <!--Configuración de Tienda-->
+                        <div class="configuracion-tienda" id="configuracion-tienda">
+                            <h3 class="tab-title">Configuración de Tienda</h3>
+                            <div class="tienda-config">
+                                <div class="config-item">
+                                    <p class="config-titulo">Nombre de la Tienda</p>
+                                    <p class="config-detalle">Tienda Sofía</p>
+                                    <button class="config-editar"><i class="fas fa-edit"></i> Editar</button>
+                                </div>
+                                <div class="config-item">
+                                    <p class="config-titulo">Descripción</p>
+                                    <p class="config-detalle">Ropa de calidad al mejor precio</p>
+                                    <button class="config-editar"><i class="fas fa-edit"></i> Editar</button>
+                                </div>
+                                <div class="config-item">
+                                    <p class="config-titulo">Políticas de Envío</p>
+                                    <p class="config-detalle">Envíos a todo el país en 3-5 días</p>
+                                    <button class="config-editar"><i class="fas fa-edit"></i> Editar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="https://img.icons8.com/?size=100&id=119346&format=png&color=000000"
+                    alt="Logo de la empresa" />
+                <p>Catamarket – Donde lo nuestro se encuentra con vos</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Secciones</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="contacto-Soporte/formulario-contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-envelope"></i> contacto@tusitio.com</p>
+                <p><i class="fas fa-phone"></i> +54 11 1234 5678</p>
+                <div class="social-icons">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Catamarket. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

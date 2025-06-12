@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>formulario de contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+    <form class="formulario" action="" method="">
+        <fieldset class="container">
+            <legend>DATOS PERSONALES</legend>
+
+
+            <label for="nombre">Nombre y apellido </label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Nombre completo">
+
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="alguien@gmail.com">
+
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+543854492008" minlength="12">
+
+            </div>
+        </fieldset>
+        <fieldset class="container">
+            <legend>CUERPO DEL MENSAJE</legend>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="Mensaje" id="Mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+        </fieldset>
+        <fieldset class="container-checkbox">
+            <legend>Preferencia de contacto</legend>
+            <div class="checkbox-element">
+                <input type="checkbox" name="preferencias" id="contacto-email" value="email" checked>
+                <label for="contacto-email">Email</label>
+            </div>
+            <div class="checkbox-element">
+                <input type="checkbox" name="preferencias" id="contacto-telefono" value="telefono">
+                <label for="contacto-telefono">Teléfono</label>
+            </div>
+        </fieldset>
+        <div class="buttons-container">
+            <button type="submit" class="btn-submit">Enviar mensaje</button>
+            <a href="../index.html" class="btn-reset">Cancelar</a> 
+        </div>
+    </form>
+</body>
+
+</html>

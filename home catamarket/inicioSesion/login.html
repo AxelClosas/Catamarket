@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar sesión</title>
+  <link rel="stylesheet" href="estilos-cambio-contrasena.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <main class="contenedor-recuperacion">
+    <section class="seccion-recuperacion">
+      <h1 class="titulo-seccion">Iniciar sesión</h1>
+      <p class="descripcion-seccion">Ingresa tus credenciales para acceder.</p>
+
+      <form class="formulario" action="home.html" method="GET" novalidate>
+        <div class="form-group">
+          <label for="email-login">Correo electrónico:</label>
+          <input type="email" id="email-login" placeholder="tucorreo@ejemplo.com" required/>
+        </div>
+
+        <div class="form-group password-group">
+          <label for="password-login">Contraseña:</label>
+          <input type="password" id="password-login" placeholder="Tu contraseña" />
+          <i class="fa-solid fa-eye toggle-password" onclick="togglePassword('password-login', this)"></i>
+        </div>
+
+        <div class="checkbox1">
+                    <label><input type="checkbox" required="">Recuérdame</label>
+                    <label for="loginForm"><a href="recuperar-contrasena.html">Olvidé mi contraseña</a></label>
+        </div>
+
+        <div class="botones-formulario">
+          <button type="submit" class="boton boton-primario">Ingresar</button>
+        </div>
+
+        <div class="link">
+                    <p>¿No tienes una cuenta?
+                        <label for="loginForm"><a href="registro.html">Regístrate</a></label>
+                    </p>
+                </div>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    function togglePassword(id, icon) {
+      const input = document.getElementById(id);
+      const isPassword = input.type === "password";
+      input.type = isPassword ? "text" : "password";
+      icon.classList.toggle("fa-eye");
+      icon.classList.toggle("fa-eye-slash");
+    }
+  </script>
+</body>
+</html>
