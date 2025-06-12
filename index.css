@@ -30,6 +30,7 @@ html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: 100%;
+    
 }
 
 *,
@@ -550,13 +551,13 @@ input[type=checkbox] {
 }
 
 .boton {
+    font-family: "Roboto", sans-serif;
     border: none;
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
     font-weight: bold;
-
     background-color: var(--color-primary);
     color: var(--color-primary-contrast);
 }
@@ -585,7 +586,7 @@ input[type=checkbox] {
 /*footer*/
 footer {
     padding: 40px 20px 20px;
-    font-family: 'Arial', sans-serif;
+    font-family: "Roboto", sans-serif;
 
     background-color: var(--color-text-primary);
     color: var(--color-surface);
@@ -750,7 +751,7 @@ footer {
   background-attachment: fixed;
   background-position: center;
   padding: 4rem 1rem;
-  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 2rem;
 }
 
@@ -843,7 +844,7 @@ footer {
 
 .cta-vendedores {
   padding: 4rem 1rem;
-  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-family: "Roboto", sans-serif;
 
   background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
   color: var(--color-primary-contrast);
@@ -859,7 +860,7 @@ footer {
   background: linear-gradient(135deg, #1a5276 0%, #3498db 100%);
   color: white;
   padding: 5rem 1rem;
-  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 2rem;
 }
 
@@ -998,7 +999,7 @@ footer {
 .seccion-eventos {
   background-color: #f9f9f9;
   padding: 5rem 1rem;
-  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 2rem;
 }
 
@@ -1142,7 +1143,7 @@ footer {
 .seccion-pasos {
   background-color: #fff;
   padding: 5rem 1rem;
-  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-family: "Roboto", sans-serif;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   margin-bottom: 2rem;
