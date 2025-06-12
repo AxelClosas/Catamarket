@@ -1242,7 +1242,7 @@ footer {
 
 .subtitulo-seccion {
   text-align: center;
-  color: #7f8c8d;
+  color:var(--color-text-primary);
   font-size: 1.2rem;
   margin-bottom: 3rem;
 }
@@ -1451,7 +1451,7 @@ footer {
 }
 
 .paso-descripcion {
-  color: #7f8c8d;
+  color: var(--color-text-primary);
   line-height: 1.6;
   font-size: 1.05rem;
 }
