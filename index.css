@@ -167,18 +167,32 @@ header {
   color: var(--color-primary-hover);
 }
 
+@media (max-width: 900px) {
+  .barra_busqueda {
+    width: 100%;
+    padding: 0 1rem;
+
+    [placeholder=" Buscar producto o categoría"] {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    i {
+      right: 1.5625rem;
+    }
+  }
+}
+
 @media (max-width: 600px) {
   .search-bar {
     display: none;
   }
 }
 
-@media (max-width: 768px){
-  .barra_busqueda {
-        width: 100%;
-        padding: 0 1rem;
-    }
-}
+
 
 
 /*hero*/
@@ -395,22 +409,6 @@ input[type=checkbox] {
   overflow: auto;
   background-color: var(--color-accent-1);
   flex: 1;
-}
-
-.Instagram {
-  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-}
-
-.Facebook {
-  background-color: #039be5;
-}
-
-.WhatsApp {
-  background-color: #40c351;
-}
-
-.Email {
-  background-color: #333333;
 }
 
 .articulo-publicados {
