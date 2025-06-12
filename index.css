@@ -173,6 +173,13 @@ header {
   }
 }
 
+@media (max-width: 768px){
+  .barra_busqueda {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+
 
 /*hero*/
 .hero {
