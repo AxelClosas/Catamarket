@@ -27,28 +27,28 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('fonts/OpenSans-Regular.woff2') format('woff2');
+  src: url('public/fonts/OpenSans-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('fonts/OpenSans-Bold.woff2') format('woff2');
+  src: url('public/fonts/OpenSans-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url('fonts/Roboto-Regular.woff2') format('woff2');
+  src: url('public/fonts/Roboto-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url('fonts/Roboto-Bold.woff2') format('woff2');
+  src: url('public/fonts/Roboto-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
@@ -119,13 +119,13 @@ header {
 }
 
 .barra_busqueda input[type="text"] {
+    font-family: "Roboto", sans-serif;
     width: 100%;
     padding: 10px 10px 10px 10px;
     font-size: 16px;
     border: 1px solid black;
     border-radius: 25px;
     outline: none;
-
     border: 1px solid var(--color-border);
     background-color: var(--color-surface);
     color: var(--color-text-primary);
@@ -575,7 +575,7 @@ input[type=checkbox] {
     font-weight: bold;
     margin-bottom: 10px;
 
-    color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 .boton {
