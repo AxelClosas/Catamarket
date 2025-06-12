@@ -28,61 +28,7 @@
 
   --color-accent-1: #EDEBFA;
   --color-accent-2: #D3F9D8;
-
 }
-
-/*Notion x Minimal Marketplace, estan buenas las card*/
-/* :root {
-  --color-background: #FAFAFA;
-  --color-surface: #FFFFFF;
-  --color-text-primary: #111827;
-  --color-text-secondary: #6B7280;
-  --color-border: #E5E7EB;
-  --color-muted: #F3F4F6;
-
-  --color-primary: #6366F1;
-  --color-primary-hover: #4F46E5;
-  --color-primary-contrast: #FFFFFF;
-
-  --color-secondary: #FACC15;
-  --color-secondary-hover: #EAB308;
-  --color-secondary-contrast: #1F1F1F;
-
-  --color-error: #EF4444;
-  --color-success: #22C55E;
-  --color-warning: #F59E0B;
-
-  --color-accent-1: #E0E7FF;
-  --color-accent-2: #FEF9C3;
-} */
-
-
-/*facebook*/
-/* :root {
-  --color-background: #F0F2F5;
-  --color-surface: #FFFFFF;
-  --color-text-primary: #050505;
-  --color-text-secondary: #65676B;
-  --color-border: #DADDE1;
-  --color-muted: #E4E6EB;
-
-  --color-primary: #1877F2; 
-  --color-primary-hover: #165EBD;
-  --color-primary-contrast: #FFFFFF;
-
-  --color-secondary: #42B72A; 
-  --color-secondary-hover: #36A420;
-  --color-secondary-contrast: #FFFFFF;
-
-  --color-error: #E53935;
-  --color-success: #4CAF50;
-  --color-warning: #FF9800;
-
-  --color-accent-1: #D6E3FF;
-  --color-accent-2: #DCF8C6;
-} */
-
-
 
 
 html {
@@ -570,7 +516,7 @@ input[type=checkbox] {
 .imagen-producto {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .contenido {
