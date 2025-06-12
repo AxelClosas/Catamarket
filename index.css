@@ -383,7 +383,7 @@ header {
 /*hero*/
 .hero {
     height: clamp(10vh, 35vh, 40vh);
-    background-image: url("https://images.pexels.com/photos/8356481/pexels-photo-8356481.jpeg");
+    background-image: url("img/hero.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
