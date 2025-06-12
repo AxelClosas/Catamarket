@@ -623,7 +623,7 @@ header {
                 }
 
                 .producto-detalle {
-                    font-family: "Open Sans", sans-serif;
+                    
                     font-size: 0.9rem;
                     color: var(--color-text-secondary);
                     margin: 0.2rem 0;
@@ -706,7 +706,7 @@ header {
                 }
 
                 .favorito-detalle {
-                    font-family: "Open Sans", sans-serif;
+                    
                     font-size: 0.9rem;
                     color: var(--color-text-secondary);
                     margin: 0.2rem 0;
@@ -793,7 +793,7 @@ header {
             }
 
             & .reseña-comentario {
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.9rem;
                 color: var(--color-text-secondary);
                 margin: 0.5rem 0;
@@ -801,7 +801,7 @@ header {
             }
 
             & .reseña-fecha {
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.8rem;
                 color: var(--color-secondary);
                 margin: 0;
@@ -838,7 +838,7 @@ header {
             padding: 0.7rem 1.5rem;
             border-radius: 8px;
             cursor: pointer;
-            font-family: "Open Sans", sans-serif;
+            
             font-size: 0.95rem;
             transition: background 0.3s ease;
         }
@@ -924,7 +924,7 @@ header {
             }
 
             .mensaje-contenido {
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.9rem;
                 color: var(--color-text-secondary);
                 margin: 0.5rem 0;
@@ -932,7 +932,7 @@ header {
             }
 
             .mensaje-fecha {
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.8rem;
                 color: var(--color-secondary);
                 margin: 0;
@@ -945,7 +945,7 @@ header {
                 padding: 0.5rem 1rem;
                 border-radius: 5px;
                 cursor: pointer;
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.9rem;
                 transition: background 0.3s ease;
                 width: min(12rem, 100%);
@@ -985,7 +985,7 @@ header {
             padding: 0.7rem 1.5rem;
             border-radius: 8px;
             cursor: pointer;
-            font-family: "Open Sans", sans-serif;
+            
             font-size: 0.95rem;
             transition: background 0.3s ease;
         }
@@ -1062,7 +1062,7 @@ header {
             }
 
             .cupon-detalle {
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.9rem;
                 color: var(--color-text-secondary);
                 margin: 0.5rem 0;
@@ -1070,7 +1070,7 @@ header {
             }
 
             .cupon-expira {
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.8rem;
                 color: var(--color-secondary);
                 margin: 0;
@@ -1106,7 +1106,7 @@ header {
             padding: 0.7rem 1.5rem;
             border-radius: 8px;
             cursor: pointer;
-            font-family: "Open Sans", sans-serif;
+            
             font-size: 0.95rem;
             transition: background 0.3s ease;
         }
@@ -1179,7 +1179,7 @@ header {
             }
 
             .direccion-detalle {
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.9rem;
                 color: var(--color-text-secondary);
                 margin: 0.5rem 0;
@@ -1192,7 +1192,7 @@ header {
                 padding: 0.5rem 1rem;
                 border-radius: 5px;
                 cursor: pointer;
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.9rem;
                 transition: background 0.3s ease;
             }
@@ -1258,7 +1258,7 @@ header {
                 }
 
                 .producto-detalle {
-                    font-family: "Open Sans", sans-serif;
+                    
                     font-size: 0.9rem;
                     color: var(--color-text-secondary);
                     margin: 0.2rem 0;
@@ -1308,7 +1308,7 @@ header {
             }
 
             .venta-detalle {
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.9rem;
                 color: var(--color-text-secondary);
                 margin: 0.2rem 0;
@@ -1321,7 +1321,7 @@ header {
                 padding: 0.5rem 1rem;
                 border-radius: 5px;
                 cursor: pointer;
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.9rem;
                 transition: background 0.3s ease;
                 width: min(12rem, 100%);
@@ -1373,7 +1373,7 @@ header {
             }
 
             .estadistica-valor {
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 1rem;
                 color: var(--color-text-primary);
                 margin: 0;
@@ -1434,7 +1434,7 @@ header {
             }
 
             & .reseña-comentario {
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.9rem;
                 color: var(--color-text-secondary);
                 margin: 0.5rem 0;
@@ -1442,7 +1442,7 @@ header {
             }
 
             & .reseña-fecha {
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.8rem;
                 color: var(--color-secondary);
                 margin: 0;
@@ -1479,7 +1479,7 @@ header {
             padding: 0.7rem 1.5rem;
             border-radius: 8px;
             cursor: pointer;
-            font-family: "Open Sans", sans-serif;
+            
             font-size: 0.95rem;
             transition: background 0.3s ease;
         }
@@ -1526,7 +1526,7 @@ header {
             }
 
             .inventario-detalle {
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.9rem;
                 color: var(--color-text-secondary);
                 margin: 0.2rem 0;
@@ -1539,7 +1539,7 @@ header {
                 padding: 0.5rem 1rem;
                 border-radius: 5px;
                 cursor: pointer;
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.9rem;
                 transition: background 0.3s ease;
             }
@@ -1592,7 +1592,7 @@ header {
             }
 
             .mensaje-contenido {
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.9rem;
                 color: var(--color-text-secondary);
                 margin: 0.5rem 0;
@@ -1600,7 +1600,7 @@ header {
             }
 
             .mensaje-fecha {
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.8rem;
                 color: var(--color-secondary);
                 margin: 0;
@@ -1613,7 +1613,7 @@ header {
                 padding: 0.5rem 1rem;
                 border-radius: 5px;
                 cursor: pointer;
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.9rem;
                 transition: background 0.3s ease;
                 width: min(12rem, 100%);
@@ -1653,7 +1653,7 @@ header {
             padding: 0.7rem 1.5rem;
             border-radius: 8px;
             cursor: pointer;
-            font-family: "Open Sans", sans-serif;
+            
             font-size: 0.95rem;
             transition: background 0.3s ease;
         }
@@ -1688,7 +1688,7 @@ header {
             }
 
             .config-detalle {
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.9rem;
                 color: var(--color-text-secondary);
                 margin: 0.5rem 0;
@@ -1701,7 +1701,7 @@ header {
                 padding: 0.5rem 1rem;
                 border-radius: 5px;
                 cursor: pointer;
-                font-family: "Open Sans", sans-serif;
+                
                 font-size: 0.9rem;
                 transition: background 0.3s ease;
             }
@@ -1893,7 +1893,7 @@ header {
 /*footer*/
 footer {
     padding: 40px 20px 20px;
-    font-family: 'Arial', sans-serif;
+    
 
     background-color: var(--color-text-primary);
     color: var(--color-surface);
