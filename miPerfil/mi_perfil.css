@@ -706,7 +706,7 @@ body {
         }
 
         .ver-mas:hover {
-            background: var(--color-secondary);
+            background: var(--color-primary-hover);
         }
     }
 }
@@ -853,7 +853,7 @@ body {
         }
 
         .ver-mas:hover {
-            background: var(--color-secondary);
+            background: var(--color-primary-hover);
         }
     }
 }
@@ -975,7 +975,7 @@ body {
         }
 
         .ver-mas:hover {
-            background: var(--color-secondary);
+            background: var(--color-primary-hover);
         }
     }
 }
@@ -1352,7 +1352,7 @@ body {
         }
 
         .ver-mas:hover {
-            background: var(--color-secondary);
+            background: var(--color-primary-hover);
         }
     }
 }
@@ -1529,7 +1529,7 @@ body {
         }
 
         .ver-mas:hover {
-            background: var(--color-secondary);
+            background: var(--color-primary-hover);
         }
     }
 }
