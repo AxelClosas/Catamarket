@@ -703,6 +703,7 @@ body {
             
             font-size: 0.95rem;
             transition: background 0.3s ease;
+            font-family: "Open Sans", sans-serif;
         }
 
         .ver-mas:hover {
@@ -811,10 +812,11 @@ body {
                 font-size: 0.9rem;
                 transition: background 0.3s ease;
                 width: min(12rem, 100%);
+                font-family: "Open Sans", sans-serif;
             }
 
             .mensaje-responder:hover {
-                background: var(--color-secondary);
+                background: var(--color-primary-hover);
             }
         }
 
@@ -850,6 +852,7 @@ body {
             
             font-size: 0.95rem;
             transition: background 0.3s ease;
+            font-family: "Open Sans", sans-serif;
         }
 
         .ver-mas:hover {
@@ -972,6 +975,7 @@ body {
             
             font-size: 0.95rem;
             transition: background 0.3s ease;
+            font-family: "Open Sans", sans-serif;
         }
 
         .ver-mas:hover {
@@ -1057,6 +1061,7 @@ body {
                 
                 font-size: 0.9rem;
                 transition: background 0.3s ease;
+                font-family: "Open Sans", sans-serif;
             }
 
             .direccion-editar:hover {
@@ -1187,10 +1192,11 @@ body {
                 font-size: 0.9rem;
                 transition: background 0.3s ease;
                 width: min(12rem, 100%);
+                font-family: "Open Sans", sans-serif;
             }
 
             .venta-action:hover {
-                background: var(--color-secondary);
+                background: var(--color-primary-hover);
             }
         }
     }
@@ -1349,6 +1355,7 @@ body {
             
             font-size: 0.95rem;
             transition: background 0.3s ease;
+            font-family: "Open Sans", sans-serif;
         }
 
         .ver-mas:hover {
@@ -1409,6 +1416,7 @@ body {
                 
                 font-size: 0.9rem;
                 transition: background 0.3s ease;
+                font-family: "Open Sans", sans-serif;
             }
 
             .inventario-actualizar:hover {
@@ -1487,10 +1495,11 @@ body {
                 font-size: 0.9rem;
                 transition: background 0.3s ease;
                 width: min(12rem, 100%);
+                font-family: "Open Sans", sans-serif;
             }
 
             .mensaje-responder:hover {
-                background: var(--color-secondary);
+                background: var(--color-primary-hover);
             }
         }
 
@@ -1526,6 +1535,7 @@ body {
             
             font-size: 0.95rem;
             transition: background 0.3s ease;
+            font-family: "Open Sans", sans-serif;
         }
 
         .ver-mas:hover {
@@ -1574,6 +1584,7 @@ body {
                 
                 font-size: 0.9rem;
                 transition: background 0.3s ease;
+                font-family: "Open Sans", sans-serif;
             }
 
             .config-editar:hover {
