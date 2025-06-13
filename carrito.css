@@ -10,7 +10,7 @@ header {
 }
 
 #main-miperfil{
-  height: 80vh;
+  min-height: 100dvh;
   padding-top: 100px;
 }
 main {
