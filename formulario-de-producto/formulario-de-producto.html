@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de producto</title>
+    <link rel="stylesheet" href="formulario-de-producto.css"> 
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <main class="contenedor-producto">
+        <section id="publicar-producto" class="seccion-producto-publicado">
+             <h1 class="titulo-seccion">Publicar producto</h1>
+                <p class="descripcion-seccion">Ingresa tu producto con una breve descripcion</p>
+        <form class="formulario" action="../miPerfil/mi-perfil.html">
+            <div class="form-group">
+                <div class="categorias">
+                    <label for="Que-quieres-vender">Que quieres
+                        vender?</label>
+                    <select class="selecciones" id="Que-quieres-vender">
+                        <option value="Electrónica">Electrónica</option>
+                        <option value="Ropa y accesorios">Ropa y accesorios</option>
+                        <option value="Hogar y cocina">Hogar y cocina</option>
+                        <option value="Salud y belleza">Salud y belleza</option>
+                        <option value="Deportes y aire libre">Deportes y aire libre</option>
+                        <option value="Juguetes y juegos">Juguetes y juegos</option>
+                        <option value="Bebés y maternidad">Bebés y maternidad</option>
+                        <option value="Automotriz">Automotriz</option>
+                        <option value="Mascotas">Mascotas</option>
+                        <option value="Libros, películas y música">Libros, películas y música</option>
+                        <option value="Oficina y papelería">Oficina y papelería</option>
+                        <option value="Herramientas y mejoras del hogar">Herramientas y mejoras del hogar</option>
+                        <option value="Alimentos y bebidas">Alimentos y bebidas</option>
+                        <option value="Tecnología y software">Tecnología y software</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Indica-tu-producto">Indica tu
+                        producto,marca y modelo:</label>
+                    <input class="" type="text" id="Indica-tu-producto"
+                        placeholder="Ej: Celular Samsung Galaxy S25 Ultra 512gb Titanium" required>
+                </div>
+                <div class="form-group">
+                    <label for="Indica-su-condicion">Indica su
+                        condicion:</label>
+                    <select class="Indica-condicion" id="condicion">
+                        <option value="Nuevo">Nuevo</option>
+                        <option value="Usado">Usado</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="Descripcion-de-tu-producto" for="Descripcion-de-tu-producto">Haz una
+                        breve descripcion de tu producto:</label>
+                    <textarea class="descripcion" name="Descripcion-de-tu-producto" id="Descripcion-de-tu-producto"
+                        placeholder="Descripcion"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="Precio" for="Precio">Precio</label>
+                    <input class="Precio" type="text" id="Indica-el-precio"
+                        placeholder="Indica el precio de venta del producto" required>
+                </div>
+                <div class="botones-formulario">
+                    <button type="submit" class="boton boton-primario">Confirmar</button>
+                    <button type="submit" class="boton boton-secundario">Cancelar</button>
+                </div>
+            </div>
+        </form>
+        </section>
+    </main>
+</body>
+
+</html>
